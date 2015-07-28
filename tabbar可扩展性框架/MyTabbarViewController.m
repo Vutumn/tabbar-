@@ -90,6 +90,7 @@
         make.height.equalTo(@49);
     }];
     
+    
     _line = [UIView new];
     _line.backgroundColor = UIColorFromRGB(0xd3d3d3);
     [_bgView addSubview:_line];
