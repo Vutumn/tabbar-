@@ -134,7 +134,9 @@
     
     _saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _saveButton.frame = CGRectMake(KDeviceWidth - 60, KDeviceHeight - 45, 40, 40);
-    [_saveButton setTitle:@"保存" forState:UIControlStateNormal];
+    [_saveButton setImage:[UIImage imageNamed:@"save_icon.png"] forState:UIControlStateNormal];
+    [_saveButton setImage:[UIImage imageNamed:@"save_icon_highlighted.png"] forState:UIControlStateHighlighted];
+    //[_saveButton setTitle:@"保存" forState:UIControlStateNormal];
     [_saveButton addTarget:self action:@selector(downloadPicture) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_saveButton];
@@ -206,7 +208,9 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 1) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
+        });
     }
 }
 
@@ -215,6 +219,8 @@
     NSString *message;
     if (!error) {
         message = @"保存成功";
+        //此处让save的状态改变,应该保存状态的说
+        _saveButton.enabled = NO;
     } else {
         message = [NSString stringWithFormat:@"%@", [error description]];
     }
