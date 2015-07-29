@@ -11,7 +11,7 @@
 
 @interface ImageViewController : UIViewController
 @property (nonatomic, strong)NSMutableArray *imageArr;
-@property (nonatomic, assign)NSInteger currentIndex;
+@property (nonatomic, assign)NSUInteger currentIndex;
 
 
 - (instancetype)initWithImage:(UIImage *)image;

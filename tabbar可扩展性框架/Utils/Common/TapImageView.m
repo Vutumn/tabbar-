@@ -6,6 +6,11 @@
 //  Copyright (c) 2015年 Vutumn. All rights reserved.
 //
 
+/**
+ *  继承imageview，添加一个自带手势的，只要遵从delegate即可使用
+ */
+
+
 #import "TapImageView.h"
 
 @implementation TapImageView

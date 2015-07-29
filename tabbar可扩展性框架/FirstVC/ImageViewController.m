@@ -7,7 +7,7 @@
 //
 
 #import "ImageViewController.h"
-#define MAS_SHORTHAND
+#import "MyPhoto.h"
 
 
 @interface ImageViewController ()<UIScrollViewDelegate>
@@ -17,7 +17,8 @@
 @property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, assign)BOOL zoomOut;
 @property (nonatomic, strong)UIButton *saveButton;
-
+@property (nonatomic, assign)NSUInteger changeIndex;
+@property (nonatomic, strong)UILabel *indexLabel;
 
 @end
 
@@ -134,6 +135,16 @@
     backView.alpha = 0.8;
     [self.view addSubview:backView];
     
+    _changeIndex = _currentIndex;
+
+    _indexLabel = [[UILabel alloc] initWithFrame:CGRectMake((KDeviceWidth - 60) / 2, KDeviceHeight - 45, 60, 40)];
+    _indexLabel.backgroundColor = [UIColor clearColor];
+    _indexLabel.text = [NSString stringWithFormat:@"%d / %d", (int)_changeIndex + 1, (int)_imageArr.count];
+    _indexLabel.font = [UIFont boldSystemFontOfSize:20];
+    _indexLabel.textAlignment = NSTextAlignmentCenter;
+    _indexLabel.textColor = [UIColor whiteColor];
+    [self.view addSubview:_indexLabel];
+    
     _saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _saveButton.frame = CGRectMake(KDeviceWidth - 60, KDeviceHeight - 45, 40, 40);
     [_saveButton setImage:[UIImage imageNamed:@"save_icon.png"] forState:UIControlStateNormal];
@@ -163,9 +174,16 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-  //  _scroll.
-    
+  //  _scroll
+    _changeIndex = _scroll.contentOffset.x / KDeviceWidth;
+
+    _indexLabel.text = [NSString stringWithFormat:@"%d / %d", (int)_changeIndex + 1, (int)_imageArr.count];
+
+    NSLog(@"%f", _scroll.contentOffset.x / KDeviceWidth);
+    NSLog(@"当前图片编号为%d",(int)_changeIndex+1);
+
 }
+
 
 
 #pragma mark -handle gesture
@@ -222,7 +240,7 @@
     if (!error) {
         message = @"保存成功";
         //此处让save的状态改变,应该保存状态的说
-        _saveButton.enabled = NO;
+       // _saveButton.enabled = NO;
     } else {
         message = [NSString stringWithFormat:@"%@", [error description]];
     }
