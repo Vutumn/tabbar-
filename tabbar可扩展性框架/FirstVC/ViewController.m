@@ -36,10 +36,19 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+     [[NSNotificationCenter defaultCenter] postNotificationName:SHOW_TAB_BAR object:nil];
+
     if (_test) {
         NSLog(@"出现第一次");
        // _test = [[NSArray alloc] init];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] postNotificationName:HIDDEN_TAB_BAR object:nil];
+
 }
 
 - (void)viewDidLoad {
