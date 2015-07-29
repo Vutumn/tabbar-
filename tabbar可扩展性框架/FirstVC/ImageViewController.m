@@ -7,6 +7,8 @@
 //
 
 #import "ImageViewController.h"
+#define MAS_SHORTHAND
+
 
 @interface ImageViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong)NSURL *imageUrl;
