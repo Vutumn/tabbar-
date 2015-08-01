@@ -156,14 +156,21 @@
 
 - (void)hiddenTabbar:(NSNotification *)notification
 {
+
     _bgView.hidden = YES;
+
     
 }
 
 - (void)showTabbar:(NSNotification *)notification
 {
+  
     _bgView.hidden = NO;
+
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

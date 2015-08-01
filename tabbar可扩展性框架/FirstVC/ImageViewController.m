@@ -237,13 +237,13 @@
 - (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     NSString *message;
-    if (!error) {
+    if (!error)
         message = @"保存成功";
         //此处让save的状态改变,应该保存状态的说
        // _saveButton.enabled = NO;
-    } else {
+     else
         message = [NSString stringWithFormat:@"%@", [error description]];
-    }
+    
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];

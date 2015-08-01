@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MyTabbarViewController.h"
+#import "SystemTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,9 @@
     //登录判断，两种选择，
     
     MyTabbarViewController *mytab = [[MyTabbarViewController alloc] init];
-    
+    SystemTabbarViewController *systab = [[SystemTabbarViewController alloc] init];
   
-    self.window.rootViewController = mytab;
+    self.window.rootViewController = systab;
     
     
     return YES;

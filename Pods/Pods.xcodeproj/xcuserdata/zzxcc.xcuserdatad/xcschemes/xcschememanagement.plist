@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NSString+Emoji.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A8C98DE20E11D72AC99ED2AEEDD9E694</key>
+		<key>5570F7E2499945F94305425BB775382F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8C76DA6A9BA43831D45615D5AFAD860</key>
+		<key>705A59B08D60B1711A4B4033F5BEEE61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAF6E2D2B226E0BD1EE4121915BE8A80</key>
+		<key>948E3ED77ED7B60000019B396A2D38A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4FF8C67AC2485C776A9850BD0E550A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

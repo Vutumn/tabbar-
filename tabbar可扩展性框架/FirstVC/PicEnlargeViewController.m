@@ -35,6 +35,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+   // [[NSNotificationCenter defaultCenter] postNotificationName:HIDDEN_TAB_BAR object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

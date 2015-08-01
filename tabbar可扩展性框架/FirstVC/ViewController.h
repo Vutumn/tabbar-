@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController:BBaseViewController
 
 
 @end

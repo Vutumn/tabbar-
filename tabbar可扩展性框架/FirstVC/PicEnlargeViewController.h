@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface PicEnlargeViewController : UIViewController
+@interface PicEnlargeViewController : BBaseViewController
 
 @end

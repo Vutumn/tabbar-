@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PicEnlargeViewController.h"
+#import "EmojiViewController.h"
 
 #define kCellIdentifier @"kCellIdentifier"
 
@@ -21,6 +22,7 @@
 {
     UITableView *_tableView;
     NSArray *_test;
+    NSArray *_nameArr;
 }
 
 - (instancetype)init
@@ -36,7 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-     [[NSNotificationCenter defaultCenter] postNotificationName:SHOW_TAB_BAR object:nil];
+    // [[NSNotificationCenter defaultCenter] postNotificationName:SHOW_TAB_BAR object:nil];
 
     if (_test) {
         NSLog(@"出现第一次");
@@ -44,17 +46,11 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [[NSNotificationCenter defaultCenter] postNotificationName:HIDDEN_TAB_BAR object:nil];
-
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _test = [[NSArray alloc] init];
+    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换", nil];
 }
 
 #pragma mark -UI
@@ -78,21 +74,33 @@
 #pragma mark -TableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return _nameArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = @"点击图片放大";
+    
+    cell.textLabel.text = _nameArr[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [_tableView deselectRowAtIndexPath:indexPath animated:YES];
-    PicEnlargeViewController *vc = [[PicEnlargeViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+
+    if (indexPath.row == 0) {
+        PicEnlargeViewController *vc = [[PicEnlargeViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+    if (indexPath.row == 1) {
+        EmojiViewController *emoji = [[EmojiViewController alloc] init];
+        emoji.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:emoji animated:YES];
+    }
+  
 }
 
 

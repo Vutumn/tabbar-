@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface ImageViewController : UIViewController
+@interface ImageViewController : BBaseViewController
 @property (nonatomic, strong)NSMutableArray *imageArr;
 @property (nonatomic, assign)NSUInteger currentIndex;
 

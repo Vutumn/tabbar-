@@ -1,0 +1,1 @@
+NSSTRING_EMOJI_OTHER_LDFLAGS = -framework "UIKit"
