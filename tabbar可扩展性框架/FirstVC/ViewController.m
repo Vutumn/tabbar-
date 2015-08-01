@@ -77,6 +77,24 @@
     return _nameArr.count;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *sectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, 30)];
+    sectionView.backgroundColor = [UIColor redColor];
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, 30 )];
+    scrollView.showsHorizontalScrollIndicator = YES;
+    scrollView.contentSize = CGSizeMake(KDeviceWidth * 2, 30 );
+    [sectionView addSubview:scrollView];
+    if (0 == section) {
+        return sectionView;
+    }
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
