@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     self.tabBar.translucent = NO;
 
     NSArray *titles = [NSArray arrayWithObjects:@"第一个", @"第二个", @"第三个", @"第四个", @"第五个",nil];
