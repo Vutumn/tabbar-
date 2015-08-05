@@ -544,12 +544,12 @@
 				471797781B62309B0027ED9E /* MyTabbarViewController.m */,
 				47C4094A1B68BBCD00C1F7AF /* SystemTabbarViewController.h */,
 				47C4094B1B68BBCD00C1F7AF /* SystemTabbarViewController.m */,
+				4710D1AA1B71B646003B4F06 /* IntroducViewController.h */,
+				4710D1AB1B71B646003B4F06 /* IntroducViewController.m */,
 				471797581B621F580027ED9E /* Main.storyboard */,
 				4717975B1B621F580027ED9E /* Images.xcassets */,
 				4717975D1B621F580027ED9E /* LaunchScreen.xib */,
 				4717974E1B621F580027ED9E /* Supporting Files */,
-				4710D1AA1B71B646003B4F06 /* IntroducViewController.h */,
-				4710D1AB1B71B646003B4F06 /* IntroducViewController.m */,
 			);
 			path = "tabbar可扩展性框架";
 			sourceTree = "<group>";

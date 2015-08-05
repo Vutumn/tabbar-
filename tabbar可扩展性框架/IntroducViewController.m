@@ -29,9 +29,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(selectRightAction)];
-    rightButton.title = @"跳过此步骤";
-    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    //当存在navbar时可调用如下方法
+//    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(selectRightAction)];
+//    rightButton.title = @"跳过此步骤";
+//    self.navigationItem.rightBarButtonItem = rightButton;
+    
+//    [self performSelector:@selector(selectRightAction) withObject:self afterDelay:2];
+    
 }
 
 
