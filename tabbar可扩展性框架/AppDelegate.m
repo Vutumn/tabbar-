@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MyTabbarViewController.h"
 #import "IntroducViewController.h"
+#import "welcomeView.h"
 
 @interface AppDelegate ()
 
@@ -28,8 +29,17 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[IntroducViewController alloc] init]];
     IntroducViewController *vc = [[IntroducViewController alloc] init];
    
-    self.window.rootViewController = vc;
     
+    self.window.rootViewController = _systab;
+    
+    [self.window makeKeyAndVisible];
+
+    
+    //启动页
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
+        welcomeView *welView = [[welcomeView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, KDeviceHeight)];
+        [self.window addSubview:welView];
+    }
     
     return YES;
 }

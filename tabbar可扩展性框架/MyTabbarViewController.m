@@ -49,6 +49,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     _NormalImageArr = [NSArray arrayWithObjects:@"home_icon_grey.png",
                        @"message_icon_grey.png",
                        @"discover_icon_grey.png",

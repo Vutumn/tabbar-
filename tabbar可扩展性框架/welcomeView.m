@@ -8,24 +8,34 @@
 
 #import "welcomeView.h"
 #import "Header.h"
+
+static NSString *const kCellIdentifier = @"kCellIdentifier";
+
 @implementation welcomeView
 {
     UITableView *_tableView;
 }
+
 - (id)initWithFrame:(CGRect)frame {
+    
     if (self = [super initWithFrame:frame]) {
-        _tableView = [[UITableView alloc]init];
+        self.backgroundColor = [UIColor purpleColor];
+        [self getLayout];
+
     }
     return self;
 }
+
+#pragma mark -UI
 - (void)getLayout {
     UIView *view = [UIView new];
     [self addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top).offset(0);
-        make.width.equalTo(self.mas_width);
+        make.width.equalTo(self);
         make.height.equalTo(@(64));
     }];
+    
     UIButton *button = [UIButton new];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:@"跳过此步骤" forState:UIControlStateNormal];
@@ -36,31 +46,35 @@
         make.top.equalTo(self.mas_top).offset(30);
         make.right.equalTo(self.mas_right).offset(-10);
     }];
+    
     _tableView = [UITableView new];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(view.mas_bottom);
-        make.left.equalTo(self.mas_left);
-        make.right.equalTo(self.mas_right);
-        make.bottom.equalTo(self.mas_bottom);
+        make.left.right.bottom.equalTo(self);
     }];
 }
+
+#pragma mark -tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    
     return cell;
 }
+
+#pragma mark -pucblic
 - (void)buttonAction {
     [UIView animateWithDuration:1 animations:^{
         self.alpha = 0;
