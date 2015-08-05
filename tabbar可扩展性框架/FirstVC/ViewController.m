@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "PicEnlargeViewController.h"
 #import "EmojiViewController.h"
+#import "AutoTableViewCell.h"
 
 #define kCellIdentifier @"kCellIdentifier"
+#define kAutoCellIdentifier @"kAutoCellIdentifier"
 
 
 
@@ -50,7 +52,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _test = [[NSArray alloc] init];
-    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换", nil];
+    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", nil];
 }
 
 #pragma mark -UI
@@ -60,8 +62,11 @@
     _tableView = [UITableView new];
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    [_tableView registerClass:[AutoTableViewCell class] forCellReuseIdentifier:kAutoCellIdentifier];
+    
     [self.view addSubview:_tableView];
     
     [_tableView makeConstraints:^(MASConstraintMaker *make) {
@@ -77,31 +82,24 @@
     return _nameArr.count;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *sectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, 30)];
-    sectionView.backgroundColor = [UIColor redColor];
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, 30 )];
-    scrollView.showsHorizontalScrollIndicator = YES;
-    scrollView.contentSize = CGSizeMake(KDeviceWidth * 2, 30 );
-    [sectionView addSubview:scrollView];
-    if (0 == section) {
-        return sectionView;
-    }
-    return nil;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 30;
+    return [AutoTableViewCell cellHeight];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 3) {
+        AutoTableViewCell *autoCell = [tableView dequeueReusableCellWithIdentifier:kAutoCellIdentifier forIndexPath:indexPath];
+        //autoCell.textLabel.text = _nameArr[indexPath.row];
+        return autoCell;
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
     
     cell.textLabel.text = _nameArr[indexPath.row];
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

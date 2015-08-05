@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MyTabbarViewController.h"
-#import "SystemTabbarViewController.h"
+#import "IntroducViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +23,12 @@
     //登录判断，两种选择，
     
     MyTabbarViewController *mytab = [[MyTabbarViewController alloc] init];
-    SystemTabbarViewController *systab = [[SystemTabbarViewController alloc] init];
+    _systab = [[SystemTabbarViewController alloc] init];
   
-    self.window.rootViewController = systab;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[IntroducViewController alloc] init]];
+    IntroducViewController *vc = [[IntroducViewController alloc] init];
+   
+    self.window.rootViewController = vc;
     
     
     return YES;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4710D1AC1B71B646003B4F06 /* IntroducViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710D1AB1B71B646003B4F06 /* IntroducViewController.m */; };
 		4713F60C1B66808C005690F2 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4713F60B1B66808C005690F2 /* photo3.jpg */; };
 		4713F6221B671C04005690F2 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F60F1B671C04005690F2 /* FifthViewController.m */; };
 		4713F6231B671C04005690F2 /* PicEnlargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F6121B671C04005690F2 /* PicEnlargeViewController.m */; };
@@ -163,6 +164,10 @@
 		476CEF6C1B6CFAAF00C02CD9 /* squirrel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476CEEF11B6CFAAF00C02CD9 /* squirrel@2x.png */; };
 		476CEF6D1B6CFAAF00C02CD9 /* suspect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476CEEF21B6CFAAF00C02CD9 /* suspect@2x.png */; };
 		476CEF6E1B6CFAAF00C02CD9 /* trollface@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476CEEF31B6CFAAF00C02CD9 /* trollface@2x.png */; };
+		476CEF711B6D057E00C02CD9 /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 476CEF701B6D057E00C02CD9 /* NSThreadViewController.m */; };
+		476CEFC71B6F6E6900C02CD9 /* AutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 476CEFC61B6F6E6900C02CD9 /* AutoTableViewCell.m */; };
+		476CEFCD1B6F71F500C02CD9 /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 476CEFCC1B6F71F500C02CD9 /* UILabel+Common.m */; };
+		476CEFD01B704F8E00C02CD9 /* UIImageView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 476CEFCF1B704F8E00C02CD9 /* UIImageView+Common.m */; };
 		47C409471B68A90A00C1F7AF /* BBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C409461B68A90A00C1F7AF /* BBaseViewController.m */; };
 		47C4094C1B68BBCD00C1F7AF /* SystemTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C4094B1B68BBCD00C1F7AF /* SystemTabbarViewController.m */; };
 		47C4096D1B6B797100C1F7AF /* EmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C4096C1B6B797100C1F7AF /* EmojiViewController.m */; };
@@ -190,6 +195,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4710D1AA1B71B646003B4F06 /* IntroducViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroducViewController.h; sourceTree = "<group>"; };
+		4710D1AB1B71B646003B4F06 /* IntroducViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroducViewController.m; sourceTree = "<group>"; };
 		4713F60B1B66808C005690F2 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
 		4713F60E1B671C04005690F2 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		4713F60F1B671C04005690F2 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
@@ -363,6 +370,14 @@
 		476CEEF11B6CFAAF00C02CD9 /* squirrel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "squirrel@2x.png"; sourceTree = "<group>"; };
 		476CEEF21B6CFAAF00C02CD9 /* suspect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "suspect@2x.png"; sourceTree = "<group>"; };
 		476CEEF31B6CFAAF00C02CD9 /* trollface@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trollface@2x.png"; sourceTree = "<group>"; };
+		476CEF6F1B6D057E00C02CD9 /* NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		476CEF701B6D057E00C02CD9 /* NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
+		476CEFC51B6F6E6900C02CD9 /* AutoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTableViewCell.h; sourceTree = "<group>"; };
+		476CEFC61B6F6E6900C02CD9 /* AutoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTableViewCell.m; sourceTree = "<group>"; };
+		476CEFCB1B6F71F500C02CD9 /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		476CEFCC1B6F71F500C02CD9 /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		476CEFCE1B704F8E00C02CD9 /* UIImageView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Common.h"; sourceTree = "<group>"; };
+		476CEFCF1B704F8E00C02CD9 /* UIImageView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Common.m"; sourceTree = "<group>"; };
 		47C409451B68A90A00C1F7AF /* BBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBaseViewController.h; sourceTree = "<group>"; };
 		47C409461B68A90A00C1F7AF /* BBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBaseViewController.m; sourceTree = "<group>"; };
 		47C4094A1B68BBCD00C1F7AF /* SystemTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTabbarViewController.h; sourceTree = "<group>"; };
@@ -429,8 +444,12 @@
 				4713F62A1B672D1F005690F2 /* ImageViewController.m */,
 				47C4096B1B6B797100C1F7AF /* EmojiViewController.h */,
 				47C4096C1B6B797100C1F7AF /* EmojiViewController.m */,
+				476CEF6F1B6D057E00C02CD9 /* NSThreadViewController.h */,
+				476CEF701B6D057E00C02CD9 /* NSThreadViewController.m */,
 				4713F6131B671C04005690F2 /* ViewController.h */,
 				4713F6141B671C04005690F2 /* ViewController.m */,
+				476CEFC51B6F6E6900C02CD9 /* AutoTableViewCell.h */,
+				476CEFC61B6F6E6900C02CD9 /* AutoTableViewCell.m */,
 				4713F63B1B686903005690F2 /* MyPhoto.h */,
 				4713F63C1B686903005690F2 /* MyPhoto.m */,
 			);
@@ -529,6 +548,8 @@
 				4717975B1B621F580027ED9E /* Images.xcassets */,
 				4717975D1B621F580027ED9E /* LaunchScreen.xib */,
 				4717974E1B621F580027ED9E /* Supporting Files */,
+				4710D1AA1B71B646003B4F06 /* IntroducViewController.h */,
+				4710D1AB1B71B646003B4F06 /* IntroducViewController.m */,
 			);
 			path = "tabbar可扩展性框架";
 			sourceTree = "<group>";
@@ -732,6 +753,10 @@
 				47C4097B1B6C7E1300C1F7AF /* UITextField+Common.m */,
 				47C4097F1B6CC43700C1F7AF /* NSTextAttachment+Common.h */,
 				47C409801B6CC43700C1F7AF /* NSTextAttachment+Common.m */,
+				476CEFCB1B6F71F500C02CD9 /* UILabel+Common.h */,
+				476CEFCC1B6F71F500C02CD9 /* UILabel+Common.m */,
+				476CEFCE1B704F8E00C02CD9 /* UIImageView+Common.h */,
+				476CEFCF1B704F8E00C02CD9 /* UIImageView+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1041,18 +1066,23 @@
 				4713F62B1B672D1F005690F2 /* ImageViewController.m in Sources */,
 				47C409731B6C763800C1F7AF /* NSString+Common.m in Sources */,
 				47C409761B6C770C00C1F7AF /* Utils.m in Sources */,
+				476CEFCD1B6F71F500C02CD9 /* UILabel+Common.m in Sources */,
 				47C409471B68A90A00C1F7AF /* BBaseViewController.m in Sources */,
 				471797541B621F580027ED9E /* AppDelegate.m in Sources */,
 				4713F6271B671C04005690F2 /* ThirdViewController.m in Sources */,
 				47C409841B6CCFCE00C1F7AF /* NSString+FontAwesome.m in Sources */,
 				471797791B62309B0027ED9E /* MyTabbarViewController.m in Sources */,
 				4713F6281B671C04005690F2 /* TapImage.m in Sources */,
+				476CEFD01B704F8E00C02CD9 /* UIImageView+Common.m in Sources */,
+				4710D1AC1B71B646003B4F06 /* IntroducViewController.m in Sources */,
+				476CEFC71B6F6E6900C02CD9 /* AutoTableViewCell.m in Sources */,
 				47C4097C1B6C7E1300C1F7AF /* UITextField+Common.m in Sources */,
 				4713F6251B671C04005690F2 /* FourthViewController.m in Sources */,
 				47C4098D1B6CD05E00C1F7AF /* UIImage+FontAwesome.m in Sources */,
 				4713F63D1B686903005690F2 /* MyPhoto.m in Sources */,
 				471797511B621F580027ED9E /* main.m in Sources */,
 				47C4098B1B6CD05E00C1F7AF /* FAImageView.m in Sources */,
+				476CEF711B6D057E00C02CD9 /* NSThreadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1163,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1170,6 +1201,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-Wall";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
