@@ -182,6 +182,7 @@
 		47C4098C1B6CD05E00C1F7AF /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C409881B6CD05E00C1F7AF /* UIFont+FontAwesome.m */; };
 		47C4098D1B6CD05E00C1F7AF /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C4098A1B6CD05E00C1F7AF /* UIImage+FontAwesome.m */; };
 		765F80E50EFD5FCD65F29CBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82350AE39228937EA13ECD97 /* libPods.a */; };
+		900DE91D1B71F47D00E3581E /* welcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900DE91C1B71F47D00E3581E /* welcomeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -403,6 +404,8 @@
 		47C409891B6CD05E00C1F7AF /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
 		47C4098A1B6CD05E00C1F7AF /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
 		82350AE39228937EA13ECD97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		900DE91B1B71F47D00E3581E /* welcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomeView.h; sourceTree = "<group>"; };
+		900DE91C1B71F47D00E3581E /* welcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeView.m; sourceTree = "<group>"; };
 		C435A2B27ADD445E1F085B41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FECB98C270D1979F81AFDE8E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -546,6 +549,8 @@
 				47C4094B1B68BBCD00C1F7AF /* SystemTabbarViewController.m */,
 				4710D1AA1B71B646003B4F06 /* IntroducViewController.h */,
 				4710D1AB1B71B646003B4F06 /* IntroducViewController.m */,
+				900DE91B1B71F47D00E3581E /* welcomeView.h */,
+				900DE91C1B71F47D00E3581E /* welcomeView.m */,
 				471797581B621F580027ED9E /* Main.storyboard */,
 				4717975B1B621F580027ED9E /* Images.xcassets */,
 				4717975D1B621F580027ED9E /* LaunchScreen.xib */,
@@ -1065,6 +1070,7 @@
 				4713F6301B677301005690F2 /* TapImageView.m in Sources */,
 				4713F62B1B672D1F005690F2 /* ImageViewController.m in Sources */,
 				47C409731B6C763800C1F7AF /* NSString+Common.m in Sources */,
+				900DE91D1B71F47D00E3581E /* welcomeView.m in Sources */,
 				47C409761B6C770C00C1F7AF /* Utils.m in Sources */,
 				476CEFCD1B6F71F500C02CD9 /* UILabel+Common.m in Sources */,
 				47C409471B68A90A00C1F7AF /* BBaseViewController.m in Sources */,

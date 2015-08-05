@@ -11,6 +11,8 @@
 #import "EmojiViewController.h"
 #import "AutoTableViewCell.h"
 
+#import "welcomeView.h"
+
 #define kCellIdentifier @"kCellIdentifier"
 #define kAutoCellIdentifier @"kAutoCellIdentifier"
 
@@ -46,6 +48,14 @@
         NSLog(@"出现第一次");
        // _test = [[NSArray alloc] init];
     }
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
+        welcomeView *welView = [[welcomeView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, KDeviceHeight)];
+        welView.backgroundColor = [UIColor purpleColor];
+        [self.tabBarController.view addSubview:welView];
+        [welView getLayout];
+        
+    }
+
 }
 
 - (void)viewDidLoad {
