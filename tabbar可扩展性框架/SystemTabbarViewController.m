@@ -25,7 +25,7 @@
     // Do any additional setup after loading the view.
     
     
-    self.tabBar.translucent = NO;
+    //self.tabBar.translucent = NO;
 
     NSArray *titles = [NSArray arrayWithObjects:@"第一个", @"第二个", @"第三个", @"第四个", @"第五个",nil];
     
@@ -39,6 +39,8 @@
                        @"discover_icon_green.png",
                        @"news_icon_hover_green.png",
                        @"my_icon_hover_green.png", nil];
+    
+    
     
     UINavigationController *VC = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc]init]];
     UINavigationController *baseVC = [[UINavigationController alloc] initWithRootViewController:[[BaseViewController alloc] init]];

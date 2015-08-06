@@ -34,7 +34,7 @@
     self = [super init];
     if (self) {
         self.title = @"第一个";
-        self.view.backgroundColor = [UIColor whiteColor];
+
     }
     return self;
 }
@@ -55,10 +55,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+   // self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
+    
     _test = [[NSArray alloc] init];
     _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", nil];
 }
+
+
 
 #pragma mark -UI
 - (void)loadView

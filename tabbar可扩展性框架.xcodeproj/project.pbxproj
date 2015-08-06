@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4710D1AC1B71B646003B4F06 /* IntroducViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710D1AB1B71B646003B4F06 /* IntroducViewController.m */; };
+		4710D1AE1B730744003B4F06 /* STARTIMAGE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4710D1AD1B730744003B4F06 /* STARTIMAGE.jpg */; };
 		4713F60C1B66808C005690F2 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4713F60B1B66808C005690F2 /* photo3.jpg */; };
 		4713F6221B671C04005690F2 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F60F1B671C04005690F2 /* FifthViewController.m */; };
 		4713F6231B671C04005690F2 /* PicEnlargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F6121B671C04005690F2 /* PicEnlargeViewController.m */; };
@@ -198,6 +199,7 @@
 /* Begin PBXFileReference section */
 		4710D1AA1B71B646003B4F06 /* IntroducViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroducViewController.h; sourceTree = "<group>"; };
 		4710D1AB1B71B646003B4F06 /* IntroducViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroducViewController.m; sourceTree = "<group>"; };
+		4710D1AD1B730744003B4F06 /* STARTIMAGE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = STARTIMAGE.jpg; sourceTree = "<group>"; };
 		4713F60B1B66808C005690F2 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
 		4713F60E1B671C04005690F2 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		4713F60F1B671C04005690F2 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 				476CEE781B6CFAAF00C02CD9 /* emoji */,
 				4713F6331B67DE63005690F2 /* save_icon_highlighted.png */,
 				4713F6341B67DE63005690F2 /* save_icon_highlighted@2x.png */,
+				4710D1AD1B730744003B4F06 /* STARTIMAGE.jpg */,
 				4713F6351B67DE63005690F2 /* save_icon.png */,
 				4713F6361B67DE63005690F2 /* save_icon@2x.png */,
 				4713F62C1B676E74005690F2 /* photo6.jpg */,
@@ -991,6 +994,7 @@
 				476CEF461B6CFAAF00C02CD9 /* 081@2x.png in Resources */,
 				476CEEF91B6CFAAF00C02CD9 /* 004@2x.png in Resources */,
 				476CEF3D1B6CFAAF00C02CD9 /* 072@2x.png in Resources */,
+				4710D1AE1B730744003B4F06 /* STARTIMAGE.jpg in Resources */,
 				476CEF391B6CFAAF00C02CD9 /* 068@2x.png in Resources */,
 				47291D291B66028200F02818 /* home_icon_grey@2x.png in Resources */,
 				476CEF611B6CFAAF00C02CD9 /* feelsgood@2x.png in Resources */,
@@ -1166,7 +1170,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-Wall";
@@ -1205,7 +1209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "-Wall";
 				SDKROOT = iphoneos;
