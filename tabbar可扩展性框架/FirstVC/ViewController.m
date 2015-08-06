@@ -55,6 +55,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    
     _test = [[NSArray alloc] init];
     _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", nil];
 }
