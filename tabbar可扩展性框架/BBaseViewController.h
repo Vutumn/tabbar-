@@ -10,5 +10,5 @@
 #import "Header.h"
 
 @interface BBaseViewController : UIViewController
-
+- (UIImage *)buttonImageFromColor:(UIColor *)color;
 @end

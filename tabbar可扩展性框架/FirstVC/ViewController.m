@@ -10,7 +10,7 @@
 #import "PicEnlargeViewController.h"
 #import "EmojiViewController.h"
 #import "AutoTableViewCell.h"
-
+#import "ProductImageViewController.h"
 #import "welcomeView.h"
 
 #define kCellIdentifier @"kCellIdentifier"
@@ -58,7 +58,7 @@
 
     
     _test = [[NSArray alloc] init];
-    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", nil];
+    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", @"生成一张纯色image", nil];
 }
 
 
@@ -123,6 +123,10 @@
         EmojiViewController *emoji = [[EmojiViewController alloc] init];
         emoji.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:emoji animated:YES];
+    }
+    if (indexPath.row == 4) {
+        ProductImageViewController *vc = [[ProductImageViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
   
 }

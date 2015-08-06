@@ -25,8 +25,17 @@
 
 
 
-
-
+#pragma mark return image 生成图片
+- (UIImage *)buttonImageFromColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0, 0, 100, 50);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
