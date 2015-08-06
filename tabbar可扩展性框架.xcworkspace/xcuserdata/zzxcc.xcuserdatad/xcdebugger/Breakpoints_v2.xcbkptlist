@@ -84,7 +84,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/EmojiViewController.m"
-            timestampString = "460118775.337234"
+            timestampString = "460458536.565654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -100,7 +100,7 @@
                   moduleName = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/EmojiViewController.m"
-                  timestampString = "460455357.006171"
+                  timestampString = "460533775.100107"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -115,7 +115,7 @@
                   moduleName = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/EmojiViewController.m"
-                  timestampString = "460455357.006341"
+                  timestampString = "460533775.101024"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -132,7 +132,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/EmojiViewController.m"
-            timestampString = "460119081.878902"
+            timestampString = "460458536.565654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -147,29 +147,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/ViewController.m"
-            timestampString = "460450329.886701"
+            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/welcomeView.m"
+            timestampString = "460534073.88165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/AppDelegate.m"
-            timestampString = "460456506.578762"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-didMoveToWindow"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
