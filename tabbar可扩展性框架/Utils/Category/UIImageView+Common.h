@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Header.h"
 
 @interface UIImageView (Common)
 
 - (void)doBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)cornerRadius;
+
+- (void)doCircleFrame;
 
 @end

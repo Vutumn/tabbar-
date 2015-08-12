@@ -1,16 +1,45 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
+  - NSObject-ObjectMap (2.3.1)
   - NSString+Emoji (0.2.0)
+  - TTTAttributedLabel (1.13.4)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.0)
   - Masonry
   - MBProgressHUD (~> 0.9.1)
+  - NSObject-ObjectMap (~> 2.3.1)
   - NSString+Emoji (~> 0.2.0)
+  - TTTAttributedLabel (~> 1.13.4)
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  NSObject-ObjectMap: 3223c0c994a8e3de44ccb74ddf3e63c86821c015
   NSString+Emoji: 127da93993ac7c01eadb2edbb039cda89a1369f4
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
 
 COCOAPODS: 0.38.2

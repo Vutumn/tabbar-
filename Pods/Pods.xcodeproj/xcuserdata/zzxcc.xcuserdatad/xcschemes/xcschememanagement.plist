@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NSObject-ObjectMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,25 +34,45 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TTTAttributedLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5570F7E2499945F94305425BB775382F</key>
+		<key>348EA5D206E9D54C057FFFB87D0FA247</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>705A59B08D60B1711A4B4033F5BEEE61</key>
+		<key>55E3BAD594CAB8A0672DDE1E423B67E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>948E3ED77ED7B60000019B396A2D38A8</key>
+		<key>8D6E69112F887FF09C2CDCD70C0ECD4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4FF8C67AC2485C776A9850BD0E550A6</key>
+		<key>B0FDECE89412332E45B2F91FC3A48A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B951212C1B253E6DCD5FF34D2E396BB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA9C1D92667429113E81421467593A92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCF5767B46F3D9CA4BF25A7BE52E48C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

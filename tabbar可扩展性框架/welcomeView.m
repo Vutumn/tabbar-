@@ -12,7 +12,7 @@
 static NSString *const kCellIdentifier = @"kCellIdentifier";
 
 @interface welcomeView()
-@property (nonatomic, strong)UIImageView *bgImage;
+@property (nonatomic, strong) UIImageView *bgImage;
 @property (nonatomic, strong) NSMutableArray *animatableConstraints;
 
 
@@ -73,7 +73,6 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
     self.bgImage.userInteractionEnabled = YES;
     [self addSubview:self.bgImage];
     
-    
     [self.bgImage makeConstraints:^(MASConstraintMaker *make) {
         [self.animatableConstraints addObjectsFromArray:@[
             make.edges.equalTo(self)
@@ -98,7 +97,7 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
 //    return cell;
 //}
 
-#pragma mark -pucblic
+#pragma mark -private
 
 - (void)didMoveToWindow
 {
@@ -118,11 +117,10 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
         
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"welcome" object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"welcome" object:nil];
     }];
 
 }
-
 
 
 /*

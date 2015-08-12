@@ -19,6 +19,10 @@
 #import "UILabel+Common.h"
 #import "UIImageView+Common.h"
 #import "NSString+Common.h"
+#import "NSObject+Common.h"
+#import "UIColor+Common.h"
+#import "UIView+Common.h"
+#import "NSObject+ObjectMap.h"
 
 #define HIDDEN_TAB_BAR @"hidden_home_tabbar"
 #define SHOW_TAB_BAR @"show_home_tabbar"
@@ -35,6 +39,23 @@
 //颜色转换
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
+//其他
+#define kNetPath_Code_Base @"https://coding.net/"
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+//链接颜色
+#define kLinkAttributes     @{(__bridge NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[UIColor colorWithHexString:@"0x3bbd79"].CGColor}
+#define kLinkAttributesActive       @{(NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[[UIColor colorWithHexString:@"0x1b9d59"] CGColor]}
+
+#define kPaddingLeftWidth 15.0
+#define kLoginPaddingLeftWidth 18.0
+#define kMySegmentControl_Height 44.0
+#define kMySegmentControlIcon_Height 70.0
+
+#define kColor999 [UIColor colorWithHexString:@"0x999999"]
+#define kColorTableBG [UIColor colorWithHexString:@"0xfafafa"]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xe5e5e5"]
 
 
 #endif

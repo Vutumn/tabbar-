@@ -89,6 +89,7 @@
     
 }
 
+
 + (CGFloat)cellHeight
 {
     return 44;

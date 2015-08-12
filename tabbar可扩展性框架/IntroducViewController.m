@@ -37,6 +37,12 @@
     
 //    [self performSelector:@selector(selectRightAction) withObject:self afterDelay:2];
     
+    [[NSUserDefaults standardUserDefaults] setObject:@"first" forKey:@""];
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"object", @"key", nil];
+    NSMutableArray *data = [[NSMutableArray alloc] init] ;
+    [data insertObject:dic atIndex:0];
+    
 }
 
 

@@ -17,15 +17,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImageView *imageView = [UIImageView new];
-    imageView.image = [self buttonImageFromColor:[UIColor orangeColor]];
-    [self.view addSubview:imageView];
-    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.centerY.equalTo(self.view.mas_centerY);
-        make.width.equalTo(@(100));
-        make.height.equalTo(@(100));
-    }];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+//    UIImageView *imageView = [UIImageView new];
+//    imageView.image = [self buttonImageFromColor:[UIColor orangeColor]];
+//    [self.view addSubview:imageView];
+//    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//        make.width.height.equalTo(@100);
+//    }];
+    
+    
+    UIView *lastView;
+    for (int i = 0; i < 5; i++) {
+        UIView *bgview = [UIView new];
+        [self.view addSubview:bgview];
+        
+        switch (i) {
+            case 0:
+                bgview.backgroundColor = [UIColor redColor];
+                break;
+            case 1:
+                bgview.backgroundColor = [UIColor yellowColor];
+                break;
+            case 2:
+                bgview.backgroundColor = [UIColor blackColor];
+                break;
+                
+            default:
+                bgview.backgroundColor = [UIColor blueColor];
+                break;
+        }
+        
+        if (lastView) {
+            [bgview makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(lastView.right);
+                make.width.height.equalTo(lastView);
+                make.centerY.equalTo(self.view.centerY);
+            }];
+        }
+        else{
+            [bgview makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.view.left);
+                make.width.height.equalTo(@50);
+                make.centerY.equalTo(self.view.centerY);
+            }];
+        }
+        lastView = bgview;
+    }
 }
 
 

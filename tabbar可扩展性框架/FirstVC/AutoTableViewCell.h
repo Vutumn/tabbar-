@@ -13,4 +13,6 @@
 
 + (CGFloat)cellHeight;
 
+- (void)fuck;
+
 @end

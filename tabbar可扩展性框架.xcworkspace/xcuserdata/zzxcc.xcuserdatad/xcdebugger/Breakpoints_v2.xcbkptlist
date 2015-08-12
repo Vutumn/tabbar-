@@ -14,18 +14,28 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/ImageViewController.m"
-            timestampString = "459830784.591706"
+            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/NetModel/AFNetAPI.m"
+            timestampString = "460995655.812891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "-doubleTap:"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-request_paopao_Block:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,92 +45,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/Utils/Common/Utils.m"
-            timestampString = "460116102.817158"
+            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/maopaoController.m"
+            timestampString = "461055044.825249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "+convertRichTextToRawText:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/EmojiViewController.m"
-            timestampString = "460113626.428798"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/Utils/Common/Utils.m"
-            timestampString = "460116102.817158"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "+emojiStringFromRawString:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/EmojiViewController.m"
-            timestampString = "460458536.565654"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-loadView"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-sendRequest"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[EmojiViewController loadView]"
+                  symbolName = "__31-[maopaoController sendRequest]_block_invoke"
                   moduleName = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/EmojiViewController.m"
-                  timestampString = "460533775.100107"
+                  urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/maopaoController.m"
+                  timestampString = "461055144.978353"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "1055">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "267">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__31-[EmojiViewController loadView]_block_invoke157"
+                  symbolName = "__31-[maopaoController sendRequest]_block_invoke_2"
                   moduleName = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/EmojiViewController.m"
-                  timestampString = "460533775.101024"
+                  urlString = "file:///Users/zzxcc/tabbar-/tabbar%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E6%A1%86%E6%9E%B6/FirstVC/maopaoController.m"
+                  timestampString = "461055144.978472"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -131,29 +93,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/FirstVC/EmojiViewController.m"
-            timestampString = "460458536.565654"
+            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/Utils/Category/UIView+Common.m"
+            timestampString = "461055591.58943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-loadView"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/welcomeView.m"
-            timestampString = "460534073.88165"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-didMoveToWindow"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-hasData:hasError:reloadButtonBlock:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
