@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
+		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NSObject-ObjectMap.xcscheme</key>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>348EA5D206E9D54C057FFFB87D0FA247</key>
+		<key>3D73724EC7297C3D91BE744BA8581DEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49863C4AAED3282567B270A0EC5ABEAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E9FDB195195B3390A0EF6BF12F76A9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5352D432641F0656C90741034E32F31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,27 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D6E69112F887FF09C2CDCD70C0ECD4F</key>
+		<key>95CF88CB9143C72F915C8D9F5E9BC9BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0FDECE89412332E45B2F91FC3A48A13</key>
+		<key>CCBEDDB6E83CB0E5A4C801A3ACE83F83</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B951212C1B253E6DCD5FF34D2E396BB3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CA9C1D92667429113E81421467593A92</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FCF5767B46F3D9CA4BF25A7BE52E48C8</key>
+		<key>F4AC5B3E7670E2279F99C90ABED8DA93</key>
 		<dict>
 			<key>primary</key>
 			<true/>

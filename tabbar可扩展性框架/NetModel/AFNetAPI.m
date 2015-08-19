@@ -8,6 +8,7 @@
 
 #import "AFNetAPI.h"
 #import "AFNetManage.h"
+#import "Tweet.h"
 
 @implementation AFNetAPI
 
@@ -27,8 +28,11 @@
     
     [[AFNetManage shareClient] requestJsonDataWithPath: @"api/tweet/public_tweets" withParams:requestDic withMethodType:Get andBlock:^(id data, NSError *error) {
         if (data) {
-            id resultData = [data valueForKeyPath:@"data"];
-            NSArray *resultA = [NSObject arrayFromJSON:resultData ofObjects:@"Tweet"];
+            NSArray *resultData = [data valueForKeyPath:@"data"];
+//            NSArray *resultA = [NSObject arrayFromJSON:resultData ofObjects:@"Tweet"];
+            NSArray *resultA = [Tweet objectArrayWithKeyValuesArray:resultData];
+            
+            
             block(resultA, nil);
         }else{
             block(nil, error);

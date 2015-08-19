@@ -2,6 +2,9 @@ pod 'Masonry'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'NSString+Emoji', '~> 0.2.0'
 pod 'TTTAttributedLabel', '~> 1.13.4'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'MJExtension', '~> 2.5.7'
+
 
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"

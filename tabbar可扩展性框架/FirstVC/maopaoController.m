@@ -10,6 +10,8 @@
 #import "AFNetAPI.h"
 #import "TweetCell.h"
 
+static NSString *kCellIdentifier_Tweet = @"TweetCell";
+
 @interface maopaoController()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)UITableView *myTableView;
 @property (nonatomic, strong)NSMutableArray *dataArr;
@@ -25,7 +27,6 @@
     [[AFNetAPI sharedManager] request_paopao_Block:^(id data, NSError *error) {
         NSLog(@"%@", data);
         //[weakSelf.dataArr addObjectsFromArray:data];
-        
     
         weakSelf.dataArr = [NSMutableArray arrayWithArray:data];
         
@@ -47,7 +48,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 
@@ -55,16 +56,23 @@
 - (void)loadView
 {
     [super loadView];
-    _myTableView = [UITableView new];
-    _myTableView.dataSource = self;
-    _myTableView.delegate = self;
-    _myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.view addSubview:_myTableView];
     
-    [_myTableView makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+    _myTableView = ({
+        UITableView *tableView = [UITableView new];
+        tableView.backgroundColor = [UIColor clearColor];
+        tableView.dataSource = self;
+        tableView.delegate = self;
+        tableView.tableFooterView = [UIView new];
+        [tableView registerClass:[TweetCell class] forCellReuseIdentifier:kCellIdentifier_Tweet];
+        [self.view addSubview:tableView];
+        
+        [tableView makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.view);
+        }];
+        
+        tableView;
+    });
+ 
     [self sendRequest];
 
     
@@ -76,14 +84,16 @@
     return self.dataArr.count;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return [TweetCell cellHeightWithObj:[self.dataArr objectAtIndex:indexPath.row]];
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [TweetCell cellHeightWithObj:[self.dataArr objectAtIndex:indexPath.row]];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_Tweet forIndexPath:indexPath];
+    cell.tweet = [self.dataArr objectAtIndex:indexPath.row];
+    
     return cell;
     
 }

@@ -13,6 +13,7 @@
 #import "ProductImageViewController.h"
 #import "welcomeView.h"
 #import "maopaoController.h"
+#import <objc/runtime.h>
 
 #define kCellIdentifier @"kCellIdentifier"
 #define kAutoCellIdentifier @"kAutoCellIdentifier"
@@ -81,6 +82,7 @@
     [_tableView makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
+    
 
 }
 

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
+
 @interface AutoTableViewCell : UITableViewCell
 
 + (CGFloat)cellHeight;

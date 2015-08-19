@@ -22,7 +22,11 @@
 #import "NSObject+Common.h"
 #import "UIColor+Common.h"
 #import "UIView+Common.h"
-#import "NSObject+ObjectMap.h"
+#import "NSDate+Common.h"
+#import "UIScrollView+Common.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MJExtension.h>
+#import "UIButton+Common.h"
 
 #define HIDDEN_TAB_BAR @"hidden_home_tabbar"
 #define SHOW_TAB_BAR @"show_home_tabbar"
@@ -56,6 +60,13 @@
 #define kColor999 [UIColor colorWithHexString:@"0x999999"]
 #define kColorTableBG [UIColor colorWithHexString:@"0xfafafa"]
 #define kColorTableSectionBg [UIColor colorWithHexString:@"0xe5e5e5"]
+
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (KDeviceWidth/320))
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define kPlaceholderMonkeyRoundView(_view_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_monkey_round_%.0f", CGRectGetWidth(_view_.frame)]]
 
 
 #endif

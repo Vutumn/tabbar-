@@ -11,6 +11,7 @@
 #import "IntroducViewController.h"
 #import "welcomeView.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +23,7 @@
     // Override point for customization after application launch.
     
     //登录判断，两种选择，
+   
     
     MyTabbarViewController *mytab = [[MyTabbarViewController alloc] init];
     _systab = [[SystemTabbarViewController alloc] init];
@@ -33,6 +35,8 @@
     self.window.rootViewController = _systab;
     
     [self.window makeKeyAndVisible];
+    
+    
 
     
     //启动页
@@ -43,6 +47,8 @@
     
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

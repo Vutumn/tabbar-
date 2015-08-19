@@ -13,6 +13,14 @@
 
 @interface UIView (Common)
 @property (nonatomic, strong)BlankView *blankView;
+
+- (void)setY:(CGFloat)y;
+- (void)setX:(CGFloat)x;
+- (void)setOrigin:(CGPoint)origin;
+- (void)setHeight:(CGFloat)height;
+- (void)setWidth:(CGFloat)width;
+- (void)setSize:(CGSize)size;
+- (CGFloat)maxXOfFrame;
 - (void)hasData:(BOOL)hasData hasError:(BOOL)hasError reloadButtonBlock:(void(^)(id sender))block;
 
 @end

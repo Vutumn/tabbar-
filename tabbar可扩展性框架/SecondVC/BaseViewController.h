@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Header.h"
+@interface BaseViewController : BBaseViewController
 
-@interface BaseViewController : UIViewController
+@property (nonatomic, strong)NSMutableArray *headArray;
 
 @end

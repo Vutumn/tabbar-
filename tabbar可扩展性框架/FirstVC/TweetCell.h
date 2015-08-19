@@ -11,10 +11,12 @@
 #import  "UITTTAttributedLabel.h"
 #import "Tweet.h"
 
+typedef void (^likeBtnClickedBlock)(Tweet *curtweet) ;
+
 @interface TweetCell : UITableViewCell<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITableViewDataSource, UITableViewDelegate, TTTAttributedLabelDelegate>
 
 @property (strong, nonatomic) Tweet *tweet;
-
+@property (nonatomic, copy) likeBtnClickedBlock likeBtnBlock;
 
 
 + (CGFloat)cellHeightWithObj:(id)obj;

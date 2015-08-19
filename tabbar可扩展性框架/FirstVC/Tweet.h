@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Header.h"
 #import "User.h"
 
 @interface Tweet : NSObject
@@ -16,7 +17,7 @@
 @property (nonatomic, strong) NSNumber *comments;
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSString *coord;
-@property (nonatomic, strong) NSNumber *created_at;
+@property (nonatomic, strong) NSDate *created_at;
 @property (nonatomic, strong) NSString *device;
 @property (nonatomic, strong) NSNumber *id;
 @property (nonatomic, strong) NSNumber *liked;
@@ -27,7 +28,10 @@
 @property (nonatomic, strong) User *owner;
 
 
-@property (nonatomic, strong, readwrite) NSDictionary *propertyArrayMap;
+//@property (nonatomic, strong, readwrite) NSDictionary *propertyArrayMap;
 
+- (NSInteger)numberOfComments;
+- (BOOL)hasMoreComments;
+- (NSInteger)numOfLikers;
 
 @end
