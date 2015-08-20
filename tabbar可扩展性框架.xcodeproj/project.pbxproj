@@ -219,6 +219,8 @@
 		90A500C01B73353D00B5ADC3 /* ProductImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A500BF1B73353D00B5ADC3 /* ProductImageViewController.m */; };
 		90F605271B858CE500F70E6A /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F605261B858CE500F70E6A /* BlockViewController.m */; };
 		90F6052D1B85B79C00F70E6A /* BlockDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */; };
+		90F605301B85D66700F70E6A /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F6052F1B85D66700F70E6A /* DelegateViewController.m */; };
+		90F605331B85D67700F70E6A /* DelegateDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F605321B85D67700F70E6A /* DelegateDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -504,6 +506,10 @@
 		90F605261B858CE500F70E6A /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		90F6052B1B85B79C00F70E6A /* BlockDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDetailViewController.h; sourceTree = "<group>"; };
 		90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockDetailViewController.m; sourceTree = "<group>"; };
+		90F6052E1B85D66700F70E6A /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		90F6052F1B85D66700F70E6A /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
+		90F605311B85D67700F70E6A /* DelegateDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateDetailViewController.h; sourceTree = "<group>"; };
+		90F605321B85D67700F70E6A /* DelegateDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateDetailViewController.m; sourceTree = "<group>"; };
 		C435A2B27ADD445E1F085B41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FECB98C270D1979F81AFDE8E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -568,6 +574,10 @@
 				90F605261B858CE500F70E6A /* BlockViewController.m */,
 				90F6052B1B85B79C00F70E6A /* BlockDetailViewController.h */,
 				90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */,
+				90F6052E1B85D66700F70E6A /* DelegateViewController.h */,
+				90F6052F1B85D66700F70E6A /* DelegateViewController.m */,
+				90F605311B85D67700F70E6A /* DelegateDetailViewController.h */,
+				90F605321B85D67700F70E6A /* DelegateDetailViewController.m */,
 				4710D1BF1B7990B6003B4F06 /* TweetCell.h */,
 				4710D1C01B7990B6003B4F06 /* TweetCell.m */,
 				47F3F6761B7C359F00967B59 /* TweetMoreCommentCell.h */,
@@ -1257,8 +1267,10 @@
 				47C409731B6C763800C1F7AF /* NSString+Common.m in Sources */,
 				90F605271B858CE500F70E6A /* BlockViewController.m in Sources */,
 				900DE91D1B71F47D00E3581E /* welcomeView.m in Sources */,
+				90F605331B85D67700F70E6A /* DelegateDetailViewController.m in Sources */,
 				475C76A71B7C42CC0006F587 /* NSDate+Helper.m in Sources */,
 				47D05B6F1B821DDF00B49D69 /* UIScrollView+Common.m in Sources */,
+				90F605301B85D66700F70E6A /* DelegateViewController.m in Sources */,
 				4710D1C41B7991C7003B4F06 /* UITapImageView.m in Sources */,
 				475C76A11B7C3CBD0006F587 /* Comment.m in Sources */,
 				47C409761B6C770C00C1F7AF /* Utils.m in Sources */,
