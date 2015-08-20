@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +53,26 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>348EA5D206E9D54C057FFFB87D0FA247</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D73724EC7297C3D91BE744BA8581DEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49863C4AAED3282567B270A0EC5ABEAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E9FDB195195B3390A0EF6BF12F76A9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5352D432641F0656C90741034E32F31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,6 +102,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>95CF88CB9143C72F915C8D9F5E9BC9BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B0FDECE89412332E45B2F91FC3A48A13</key>
 		<dict>
 			<key>primary</key>
@@ -83,6 +118,16 @@
 			<true/>
 		</dict>
 		<key>CA9C1D92667429113E81421467593A92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCBEDDB6E83CB0E5A4C801A3ACE83F83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4AC5B3E7670E2279F99C90ABED8DA93</key>
 		<dict>
 			<key>primary</key>
 			<true/>

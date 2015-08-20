@@ -217,6 +217,8 @@
 		765F80E50EFD5FCD65F29CBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82350AE39228937EA13ECD97 /* libPods.a */; };
 		900DE91D1B71F47D00E3581E /* welcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900DE91C1B71F47D00E3581E /* welcomeView.m */; };
 		90A500C01B73353D00B5ADC3 /* ProductImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A500BF1B73353D00B5ADC3 /* ProductImageViewController.m */; };
+		90F605271B858CE500F70E6A /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F605261B858CE500F70E6A /* BlockViewController.m */; };
+		90F6052D1B85B79C00F70E6A /* BlockDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -498,6 +500,10 @@
 		900DE91C1B71F47D00E3581E /* welcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeView.m; sourceTree = "<group>"; };
 		90A500BE1B73353D00B5ADC3 /* ProductImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductImageViewController.h; sourceTree = "<group>"; };
 		90A500BF1B73353D00B5ADC3 /* ProductImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductImageViewController.m; sourceTree = "<group>"; };
+		90F605251B858CE500F70E6A /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		90F605261B858CE500F70E6A /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		90F6052B1B85B79C00F70E6A /* BlockDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDetailViewController.h; sourceTree = "<group>"; };
+		90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockDetailViewController.m; sourceTree = "<group>"; };
 		C435A2B27ADD445E1F085B41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FECB98C270D1979F81AFDE8E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -558,6 +564,10 @@
 				90A500BF1B73353D00B5ADC3 /* ProductImageViewController.m */,
 				4710D1BC1B789E59003B4F06 /* maopaoController.h */,
 				4710D1BD1B789E5A003B4F06 /* maopaoController.m */,
+				90F605251B858CE500F70E6A /* BlockViewController.h */,
+				90F605261B858CE500F70E6A /* BlockViewController.m */,
+				90F6052B1B85B79C00F70E6A /* BlockDetailViewController.h */,
+				90F6052C1B85B79C00F70E6A /* BlockDetailViewController.m */,
 				4710D1BF1B7990B6003B4F06 /* TweetCell.h */,
 				4710D1C01B7990B6003B4F06 /* TweetCell.m */,
 				47F3F6761B7C359F00967B59 /* TweetMoreCommentCell.h */,
@@ -1245,6 +1255,7 @@
 				4713F62B1B672D1F005690F2 /* ImageViewController.m in Sources */,
 				4710D1B81B78588F003B4F06 /* NSObject+Common.m in Sources */,
 				47C409731B6C763800C1F7AF /* NSString+Common.m in Sources */,
+				90F605271B858CE500F70E6A /* BlockViewController.m in Sources */,
 				900DE91D1B71F47D00E3581E /* welcomeView.m in Sources */,
 				475C76A71B7C42CC0006F587 /* NSDate+Helper.m in Sources */,
 				47D05B6F1B821DDF00B49D69 /* UIScrollView+Common.m in Sources */,
@@ -1269,6 +1280,7 @@
 				4710D1D81B79C15C003B4F06 /* Tweet.m in Sources */,
 				476CEFC71B6F6E6900C02CD9 /* AutoTableViewCell.m in Sources */,
 				47C4097C1B6C7E1300C1F7AF /* UITextField+Common.m in Sources */,
+				90F6052D1B85B79C00F70E6A /* BlockDetailViewController.m in Sources */,
 				4713F6251B671C04005690F2 /* FourthViewController.m in Sources */,
 				4710D1C11B7990B6003B4F06 /* TweetCell.m in Sources */,
 				90A500C01B73353D00B5ADC3 /* ProductImageViewController.m in Sources */,

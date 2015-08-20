@@ -14,7 +14,7 @@
 #import "welcomeView.h"
 #import "maopaoController.h"
 #import <objc/runtime.h>
-
+#import "BlockViewController.h"
 #define kCellIdentifier @"kCellIdentifier"
 #define kAutoCellIdentifier @"kAutoCellIdentifier"
 
@@ -60,7 +60,7 @@
 
     
     _test = [[NSArray alloc] init];
-    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", @"生成一张纯色image", @"冒泡界面", nil];
+    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", @"生成一张纯色image", @"冒泡界面", @"block", nil];
 }
 
 
@@ -132,6 +132,10 @@
             break;
         case 5:
             vc = [[maopaoController alloc] init];
+            break;
+        case 6:
+            vc = [[BlockViewController alloc]init];
+            break;
         default:
             break;
     }
