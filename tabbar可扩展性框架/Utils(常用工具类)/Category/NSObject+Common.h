@@ -16,7 +16,7 @@
 -(id)handleResponse:(id)responseJSON autoShowError:(BOOL)autoShowError;
 
 - (BOOL)showError:(NSError *)error;
-
++ (NSString *)baseURLStr;
 
 
 @end

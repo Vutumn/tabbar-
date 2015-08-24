@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SMPageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06F41ECABA8543AE85E1BA3A47ECA66E</key>
+		<key>267D1CA583B70BAFCC4FF7426B258937</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46C8FA7EF57292F5C9B2ED6AC50399A0</key>
+		<key>321BC9C92DFC76E38EEAD2C5B488909B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D572E85BC61B88EDDC7F00384CBA047</key>
+		<key>3B402A45617EA11C7344961F433B815C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45E4C1D7C0FEB18A2B5C06577F6AAFC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A74626AF929A5E8061B856EFCE09152</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87E7D1B883F337D0FDA35517CCECA856</key>
+		<key>667AA6C8BC8585EE03C5F00424AA46B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD614F572E042A4B60EAD8E2BEE0340D</key>
+		<key>B3D2D668A8E1FF1AA13C6327DCECF2EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B59114C30AABA66836C9A9B6D52E5F7B</key>
+		<key>BDC835B963D8410CC7587EEF3BCE6A11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC16202C4428D16FF1715FCDDF120ECE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F305D415E47BB3E17E07A4A8A9B22142</key>
+		<key>E982817BD5626C0629FC637A5F7EA35B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -29,6 +29,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SMPageControl (1.2)
   - TTTAttributedLabel (1.13.4)
 
 DEPENDENCIES:
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - NSString+Emoji (~> 0.2.0)
   - NYXImagesKit (~> 2.3)
   - SDWebImage (~> 3.7.3)
+  - SMPageControl (~> 1.2)
   - TTTAttributedLabel (~> 1.13.4)
 
 SPEC CHECKSUMS:
@@ -51,6 +53,7 @@ SPEC CHECKSUMS:
   NSString+Emoji: 127da93993ac7c01eadb2edbb039cda89a1369f4
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
 
 COCOAPODS: 0.38.2

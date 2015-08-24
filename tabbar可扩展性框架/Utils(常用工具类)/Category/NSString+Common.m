@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Common.h"
+#import "NSObject+Common.h"
 
 @implementation NSString (Common)
 
@@ -34,6 +35,18 @@
     return [self getSizeWithFont:font constrainedToSize:size].width;
 }
 
-
+- (NSURL *)urlWithCodePath{
+    NSString *urlStr;
+    if (!self || self.length <= 0) {
+        return nil;
+    }else{
+        if (![self hasPrefix:@"http"]) {
+            urlStr = [NSString stringWithFormat:@"%@%@", [NSObject baseURLStr], self];
+        }else{
+            urlStr = self;
+        }
+        return [NSURL URLWithString:urlStr];
+    }
+}
 
 @end

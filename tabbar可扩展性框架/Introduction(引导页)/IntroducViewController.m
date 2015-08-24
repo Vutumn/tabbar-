@@ -9,11 +9,13 @@
 #import "IntroducViewController.h"
 #import <NYXImagesKit/NYXImagesKit.h>
 #import "LoginViewController.h"
+#import <SMPageControl.h>
 
 @interface IntroducViewController ()
 @property (nonatomic, strong) UIButton *nextButton;
 @property (nonatomic, strong) NSMutableDictionary *iconsDict, *tipsDict;
 @property (nonatomic, assign) NSUInteger numberOfPages;
+@property (nonatomic, strong) SMPageControl *pageControl;
 
 @end
 
@@ -85,6 +87,7 @@
 - (void)InitWithSubViews
 {
     [self.view addSubview:self.nextButton];
+    [self.view addSubview:self.pageControl];
     [self configureViews];
     [self configureAnimations];
 }
@@ -106,10 +109,41 @@
         
         [_nextButton makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.view.centerX);
-            make.bottom.equalTo(self.view.bottom).offset(-50);
+            make.bottom.equalTo(self.view.bottom).offset(-30);
         }];
     }
     return _nextButton;
+}
+
+- (SMPageControl *)pageControl
+{
+    if (!_pageControl) {
+        UIImage *pageIndicatorImage = [UIImage imageNamed:@"intro_dot_unselected"];
+        UIImage *currentPageIndicatorImage = [UIImage imageNamed:@"intro_dot_selected"];
+        
+        if (!kDevice_Is_iPhone6 && !kDevice_Is_iPhone6Plus) {
+            CGFloat desginWidth = 375.0;//iPhone6 的设计尺寸
+            CGFloat scaleFactor = KDeviceWidth/desginWidth;
+            pageIndicatorImage = [pageIndicatorImage scaleByFactor:scaleFactor];
+            currentPageIndicatorImage = [currentPageIndicatorImage scaleByFactor:scaleFactor];
+        }
+        
+        _pageControl = [SMPageControl new];
+        _pageControl.numberOfPages = self.numberOfPages;
+        _pageControl.userInteractionEnabled = NO;
+        _pageControl.pageIndicatorImage = pageIndicatorImage;
+        _pageControl.currentPageIndicatorImage = currentPageIndicatorImage;
+        _pageControl.currentPage = 0;
+        [_pageControl sizeToFit];
+        [self.view addSubview:self.pageControl];
+        
+        [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(KDeviceWidth, kScaleFrom_iPhone5_Desgin(20)));
+            make.centerX.equalTo(self.view);
+            make.bottom.equalTo(self.nextButton.mas_top).offset(-kScaleFrom_iPhone5_Desgin(10));
+        }];
+    }
+    return _pageControl;
 }
 
 - (void)configureViews
@@ -199,11 +233,15 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self animateCurrentFrame];
+    NSInteger nearestPage = floorf(self.pageOffset + 0.5);
+    self.pageControl.currentPage = nearestPage;
     if (scrollView == self.scrollView && self.scrollView.contentOffset.x / KDeviceWidth == 2) {
         [UIView animateWithDuration:0.5 animations:^{
             _nextButton.alpha = 1;
         }];
     }
+  
+    
 }
 
 #pragma mark -event response

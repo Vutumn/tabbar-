@@ -45,6 +45,9 @@
 
 //其他
 #define kNetPath_Code_Base @"https://coding.net/"
+//测试地址
+#define kBaseUrlStr_Test @"https://coding.net/"
+
 #define kKeyWindow [UIApplication sharedApplication].keyWindow
 #define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 

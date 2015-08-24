@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import <MBProgressHUD.h>
 
+#define kTestKey @"BaseURLIsTest"
 #define OMDateFormat @"yyyy-MM-dd'T'HH:mm:ss.SSS"
 #define OMTimeZone @"UTC"
 
@@ -111,5 +112,30 @@
     return isCreated;
 }
 
+#pragma mark BaseURL
++ (NSString *)baseURLStr{
+    NSString *baseURLStr;
+    if ([self baseURLStrIsTest]) {
+        //staging
+        baseURLStr = kBaseUrlStr_Test;
+    }else{
+        //生产
+        baseURLStr = @"https://coding.net/";
+    }
+    
+    //    {//其他
+    //        //村民
+    //        baseURLStr = @"http://192.168.0.188:8080/";
+    //
+    //        //彭博
+    //        baseURLStr = @"http://192.168.0.156:9990/";
+    //    }
+    
+    return baseURLStr;
+}
 
++ (BOOL)baseURLStrIsTest{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [[defaults valueForKey:kTestKey] boolValue];
+}
 @end

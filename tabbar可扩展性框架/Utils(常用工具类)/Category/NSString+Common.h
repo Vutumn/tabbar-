@@ -16,5 +16,7 @@
 
 - (CGFloat)getWidthWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
 
+- (NSURL *)urlWithCodePath;
+
 
 @end
