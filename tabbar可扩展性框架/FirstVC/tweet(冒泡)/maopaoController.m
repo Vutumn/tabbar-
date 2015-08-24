@@ -6,19 +6,19 @@
 //  Copyright (c) 2015年 Vutumn. All rights reserved.
 //
 
-#import "maopaoController.h"
+#import "MaoPaoController.h"
 #import "AFNetAPI.h"
 #import "TweetCell.h"
 
 static NSString *kCellIdentifier_Tweet = @"TweetCell";
 
-@interface maopaoController()<UITableViewDataSource, UITableViewDelegate>
+@interface MaoPaoController()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)UITableView *myTableView;
 @property (nonatomic, strong)NSMutableArray *dataArr;
 
 @end
 
-@implementation maopaoController
+@implementation MaoPaoController
 
 #pragma mark -getData
 - (void)sendRequest

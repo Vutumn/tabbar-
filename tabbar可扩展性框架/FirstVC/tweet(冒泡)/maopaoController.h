@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface maopaoController : BBaseViewController
+@interface MaoPaoController : BBaseViewController
 
 @end

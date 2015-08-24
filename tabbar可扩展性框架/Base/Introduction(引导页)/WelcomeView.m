@@ -6,19 +6,19 @@
 //  Copyright (c) 2015年 刘旭. All rights reserved.
 //
 
-#import "welcomeView.h"
+#import "WelcomeView.h"
 #import "Header.h"
 
 static NSString *const kCellIdentifier = @"kCellIdentifier";
 
-@interface welcomeView()
+@interface WelcomeView()
 @property (nonatomic, strong) UIImageView *bgImage;
 @property (nonatomic, strong) NSMutableArray *animatableConstraints;
 
 
 @end
 
-@implementation welcomeView
+@implementation WelcomeView
 {
     UITableView *_tableView;
     

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface welcomeView : UIView <UITableViewDelegate, UITableViewDataSource>
+@interface WelcomeView : UIView <UITableViewDelegate, UITableViewDataSource>
 - (void)getLayout;
 @end
