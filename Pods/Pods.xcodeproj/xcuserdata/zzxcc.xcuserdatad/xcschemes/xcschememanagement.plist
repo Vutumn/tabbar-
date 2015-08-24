@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JazzHands.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>NSString+Emoji.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NYXImagesKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,17 +57,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3D73724EC7297C3D91BE744BA8581DEF</key>
+		<key>06F41ECABA8543AE85E1BA3A47ECA66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49863C4AAED3282567B270A0EC5ABEAC</key>
+		<key>46C8FA7EF57292F5C9B2ED6AC50399A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E9FDB195195B3390A0EF6BF12F76A9D</key>
+		<key>4D572E85BC61B88EDDC7F00384CBA047</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95CF88CB9143C72F915C8D9F5E9BC9BE</key>
+		<key>87E7D1B883F337D0FDA35517CCECA856</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCBEDDB6E83CB0E5A4C801A3ACE83F83</key>
+		<key>AD614F572E042A4B60EAD8E2BEE0340D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4AC5B3E7670E2279F99C90ABED8DA93</key>
+		<key>B59114C30AABA66836C9A9B6D52E5F7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC16202C4428D16FF1715FCDDF120ECE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F305D415E47BB3E17E07A4A8A9B22142</key>
 		<dict>
 			<key>primary</key>
 			<true/>

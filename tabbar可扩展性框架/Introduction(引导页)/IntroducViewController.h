@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Vutumn. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <IFTTTJazzHands.h>
 #import "Header.h"
 
-@interface IntroducViewController : UIViewController
+@interface IntroducViewController : IFTTTAnimatedPagingScrollViewController
 
 @end
