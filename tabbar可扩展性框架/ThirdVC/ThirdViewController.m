@@ -9,14 +9,19 @@
 #import "ThirdViewController.h"
 #import "AutoSlideScrollView.h"
 #import "CodingBanner.h"
+#import "AFNetAPI.h"
+#import "HeaderView.h"
+#import "CircleTableViewCell.h"
+#import "MengTableViewCell.h"
+#import "AdddFriendController.h"
 
-static NSString *const kCellIdentifier = @"kCellIdentifier";
+static NSString *const kCircleCellIdentifier = @"kCircleCellIdentifier";
+static NSString *const kMengCellIdentifier = @"kMengCellIdentifier";
+
 
 @interface ThirdViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) AutoSlideScrollView *mySlideView;
-@property (nonatomic, strong) NSArray *adListArray;
-@property (nonatomic, strong) NSMutableArray *imageViewList;
+@property (nonatomic, strong) HeaderView *headView;
 
 @end
 
@@ -45,27 +50,41 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
     
 }
 
+- (void)dealloc
+{
+    _tableView.delegate = nil;
+    _tableView.dataSource = nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
+ 
+    [self InitWithSubViews];
 }
+
+
 
 #pragma mark -UI
 - (void)InitWithSubViews
 {
+    
     [self.view addSubview:self.tableView];
+    [self refreshBanner];
 }
 
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [UITableView new];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
-        _tableView.tableHeaderView = self.mySlideView;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.tableFooterView = [UIView new];
+        [_tableView registerClass:[CircleTableViewCell class] forCellReuseIdentifier:kCircleCellIdentifier];
+        [_tableView registerClass:[MengTableViewCell class] forCellReuseIdentifier:kMengCellIdentifier];
         [self.view addSubview:_tableView];
         
         [_tableView makeConstraints:^(MASConstraintMaker *make) {
@@ -75,43 +94,38 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
     return _tableView;
 }
 
-- (AutoSlideScrollView *)mySlideView
+#pragma mark -Banner
+- (void)refreshBanner
 {
-    if (!_mySlideView) {
-        __weak typeof(self) weakSelf = self;
-        _mySlideView = [[AutoSlideScrollView alloc] initWithFrame:CGRectMake(0, 0, KDeviceWidth, 150) animationDuration:3];
-        _mySlideView.layer.masksToBounds = YES;
-        _mySlideView.scrollView.scrollsToTop = NO;
-        _mySlideView.totalPagesCount = ^NSInteger(){
-            return weakSelf.adListArray.count;
+    __weak typeof(self) weakSelf = self;
+    if (!_headView) {
+        _headView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 0, KDeviceWidth, 350)];
+        _headView.tapActionBlock = ^(CodingBanner *tappedBanner){
+            [weakSelf goToBanner:tappedBanner];
         };
         
-        _mySlideView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex){
-            if (weakSelf.adListArray.count > pageIndex) {
-                UIImageView *imageView = [weakSelf p_reuseViewForIndex:pageIndex];
-                CodingBanner *curBanner = weakSelf.adListArray[pageIndex];
-                [imageView sd_setImageWithURL:[curBanner.image urlWithCodePath]];
-                return imageView;
-            }else{
-                return [UIView new];
-            }
-        };
-        _mySlideView.currentPageIndexChangeBlock = ^(NSInteger currentPageIndex){
-            if (weakSelf.adListArray.count > currentPageIndex) {
-                //pagecontrol滚动
-//                weakSelf.myPageControl.currentPage = currentPageIndex;
-                
-            }
+        _headView.buttonActionBlock = ^(NSInteger index){
+            [weakSelf buttonSelected:index];
         };
         
+        _headView.producActionBlock = ^(NSInteger index){
+            [weakSelf productSelect:index];
+        };
+        
+        _tableView.tableHeaderView = _headView;
     }
-    return _mySlideView;
+    
+    [[AFNetAPI sharedManager] request_BannersWithBlock:^(id data, NSError *error) {
+        if (data) {
+            weakSelf.headView.adListArray = data;
+        }
+    }];
 }
 
 #pragma mark -TableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -121,45 +135,125 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    return 0.1;
+    if (indexPath.section == 0) {
+        return [CircleTableViewCell cellHeightWithObj:nil];
+    }else{
+        return [MengTableViewCell cellHeightWithObj:nil];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return section == 0 ? 150 : 0.1;
+   
+    return 30;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KDeviceWidth, 30)];
+    view.backgroundColor = [UIColor yellowColor];
+    
+    UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(10, 2, 26, 26)];
+    img.backgroundColor = [UIColor redColor];
+    [img doCircleFrame];
+    [view addSubview:img];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(img.frame) + 5, 0, 40, 30)];
+    section == 0 ? (label.text = @"圈子") : (label.text = @"医萌通");
+    label.font = [UIFont systemFontOfSize:13];
+    [view addSubview:label];
+    
+  
+    return view;
+}
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    return cell;
+    if (indexPath.section == 0) {
+        CircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCircleCellIdentifier forIndexPath:indexPath];
+        [tableView addLineforPlainCell:cell forRowAtIndexPath:indexPath withLeftSpace:0 hasSectionLine:YES];
+        return cell;
+    }else{
+        MengTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMengCellIdentifier forIndexPath:indexPath];
+        if (indexPath.row == 0) {
+            cell.cellType = 1;
+        }else if(indexPath.row == 1){
+            cell.cellType = 0;
+        }else{
+            cell.cellType = 2;
+        }
+        [tableView addLineforPlainCell:cell forRowAtIndexPath:indexPath withLeftSpace:0 hasSectionLine:YES];
+        return cell;
+    }
+    
 }
 
-#pragma mark -private
-- (UIImageView *)p_reuseViewForIndex:(NSInteger)pageIndex{
-    if (!_imageViewList) {
-        _imageViewList = [[NSMutableArray alloc] initWithCapacity:3];
-        for (int i = 0; i < 3; i++) {
-            UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(kPaddingLeftWidth, 10, KDeviceWidth - 2 * kPaddingLeftWidth, (KDeviceWidth - 2) * 0.3)];
-            view.backgroundColor = [UIColor colorWithHexString:@"0xe5e5e5"];
-            view.clipsToBounds = YES;
-            view.contentMode = UIViewContentModeScaleAspectFill;
-            [_imageViewList addObject:view];
-        }
-    }
-    UIImageView *imageView;
-    NSInteger currentPageIndex = self.mySlideView.currentPageIndex;
-    if (pageIndex == currentPageIndex) {
-        imageView = _imageViewList[1];
-    }else if (pageIndex == currentPageIndex + 1
-              || (labs(pageIndex - currentPageIndex) > 1 && pageIndex < currentPageIndex)){
-        imageView = _imageViewList[2];
-    }else{
-        imageView = _imageViewList[0];
-    }
-    return imageView;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+//uitableview处理section的不悬浮，禁止section停留的方法，主要是这段代码
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat sectionHeaderHeight = 50;
+    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
+    
+}
+
+#pragma mark -event response
+- (void)goToBanner:(CodingBanner *)tapedBanner{
+    //点击轮播方法
+    
+    //[self analyseLinkStr:tapedBanner.link];
+}
+
+- (void)buttonSelected:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+        {
+            NSLog(@"云问诊");
+            AdddFriendController *vc = [[AdddFriendController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:
+            NSLog(@"健康产品");
+            break;
+        case 2:
+            NSLog(@"圈子");
+            break;
+        case 3:
+            NSLog(@"医萌通");
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)productSelect:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+            NSLog(@"养老产品");
+            break;
+        case 1:
+            NSLog(@"首发新品");
+            break;
+        case 2:
+            NSLog(@"敬老宣传");
+            break;
+        default:
+            break;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470D393D1B8DCEE10023A5F5 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D393C1B8DCEE10023A5F5 /* UITableView+Common.m */; };
+		470D39411B8EA1320023A5F5 /* AdddFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39401B8EA1320023A5F5 /* AdddFriendController.m */; };
+		470D39431B8ED03E0023A5F5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470D39421B8ED03E0023A5F5 /* CoreImage.framework */; };
+		470D39451B8ED07B0023A5F5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470D39441B8ED07B0023A5F5 /* CoreVideo.framework */; };
+		470D39481B8EDA800023A5F5 /* UISearchBar+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39471B8EDA800023A5F5 /* UISearchBar+Common.m */; };
+		470D394B1B8EDB4D0023A5F5 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D394A1B8EDB4D0023A5F5 /* UIImage+Common.m */; };
+		470D394E1B8EEF810023A5F5 /* AddFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D394D1B8EEF810023A5F5 /* AddFriendTableViewCell.m */; };
+		470D39511B8EF5920023A5F5 /* FriendInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39501B8EF5920023A5F5 /* FriendInfoViewController.m */; };
+		470D39541B8EFCA10023A5F5 /* MainInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39531B8EFCA10023A5F5 /* MainInfoTableViewCell.m */; };
+		470D39571B8EFCB50023A5F5 /* OtherInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39561B8EFCB50023A5F5 /* OtherInfoTableViewCell.m */; };
+		470D395A1B8F08F90023A5F5 /* ActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D39591B8F08F90023A5F5 /* ActionView.m */; };
 		4713F6221B671C04005690F2 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F60F1B671C04005690F2 /* FifthViewController.m */; };
 		4713F6251B671C04005690F2 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F6171B671C04005690F2 /* FourthViewController.m */; };
 		4713F6261B671C04005690F2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713F61A1B671C04005690F2 /* BaseViewController.m */; };
@@ -249,6 +260,20 @@
 		47535DE31B8B0DCA002BC02F /* AFNetAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DE01B8B0DCA002BC02F /* AFNetAPI.m */; };
 		47535DE41B8B0DCA002BC02F /* AFNetManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DE21B8B0DCA002BC02F /* AFNetManage.m */; };
 		47535DE71B8B1B43002BC02F /* CodingBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DE61B8B1B43002BC02F /* CodingBanner.m */; };
+		47535DEA1B8C176B002BC02F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DE91B8C176B002BC02F /* HeaderView.m */; };
+		47535DED1B8C4C88002BC02F /* CircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DEC1B8C4C88002BC02F /* CircleTableViewCell.m */; };
+		47535DF01B8C63B1002BC02F /* MengTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DEF1B8C63B1002BC02F /* MengTableViewCell.m */; };
+		477037A21B9DAED800734765 /* PatientsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A11B9DAED800734765 /* PatientsTableViewCell.m */; };
+		477037A51B9E7F4D00734765 /* PDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A41B9E7F4D00734765 /* PDetailViewController.m */; };
+		477037A81B9E8F6A00734765 /* PHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A71B9E8F6A00734765 /* PHeaderView.m */; };
+		477037AB1B9EE4D400734765 /* VideoHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037AA1B9EE4D400734765 /* VideoHistoryTableViewCell.m */; };
+		477037AE1B9EE51200734765 /* PatientsRecorderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037AD1B9EE51200734765 /* PatientsRecorderTableViewCell.m */; };
+		477037B11B9FD73100734765 /* MoreButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037B01B9FD73100734765 /* MoreButtonTableViewCell.m */; };
+		477037B41B9FFA7700734765 /* PVideoHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037B31B9FFA7700734765 /* PVideoHistoryViewController.m */; };
+		477037BA1BA0012800734765 /* PRemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037B91BA0012800734765 /* PRemarkViewController.m */; };
+		477037BD1BA008C400734765 /* CloudAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037BC1BA008C400734765 /* CloudAskViewController.m */; };
+		477037C31BA013E000734765 /* PRecentTreatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037C21BA013E000734765 /* PRecentTreatTableViewCell.m */; };
+		477038791BA07FA900734765 /* Pepar.m in Sources */ = {isa = PBXBuildFile; fileRef = 477038781BA07FA900734765 /* Pepar.m */; };
 		4786C1C51B82DA100019625C /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4786C1C41B82DA100019625C /* Reveal.framework */; };
 		4786C1C71B82DAA50019625C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4786C1C61B82DAA50019625C /* libz.dylib */; };
 		47D05B721B8222CA00B49D69 /* CIRFirstViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D05B711B8222CA00B49D69 /* CIRFirstViewcontroller.m */; };
@@ -268,6 +293,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470D393B1B8DCEE10023A5F5 /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		470D393C1B8DCEE10023A5F5 /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		470D393F1B8EA1320023A5F5 /* AdddFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdddFriendController.h; sourceTree = "<group>"; };
+		470D39401B8EA1320023A5F5 /* AdddFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdddFriendController.m; sourceTree = "<group>"; };
+		470D39421B8ED03E0023A5F5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		470D39441B8ED07B0023A5F5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		470D39461B8EDA800023A5F5 /* UISearchBar+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Common.h"; sourceTree = "<group>"; };
+		470D39471B8EDA800023A5F5 /* UISearchBar+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Common.m"; sourceTree = "<group>"; };
+		470D39491B8EDB4D0023A5F5 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		470D394A1B8EDB4D0023A5F5 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		470D394C1B8EEF810023A5F5 /* AddFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendTableViewCell.h; sourceTree = "<group>"; };
+		470D394D1B8EEF810023A5F5 /* AddFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendTableViewCell.m; sourceTree = "<group>"; };
+		470D394F1B8EF5920023A5F5 /* FriendInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfoViewController.h; sourceTree = "<group>"; };
+		470D39501B8EF5920023A5F5 /* FriendInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfoViewController.m; sourceTree = "<group>"; };
+		470D39521B8EFCA10023A5F5 /* MainInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInfoTableViewCell.h; sourceTree = "<group>"; };
+		470D39531B8EFCA10023A5F5 /* MainInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInfoTableViewCell.m; sourceTree = "<group>"; };
+		470D39551B8EFCB50023A5F5 /* OtherInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherInfoTableViewCell.h; sourceTree = "<group>"; };
+		470D39561B8EFCB50023A5F5 /* OtherInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherInfoTableViewCell.m; sourceTree = "<group>"; };
+		470D39581B8F08F90023A5F5 /* ActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionView.h; sourceTree = "<group>"; };
+		470D39591B8F08F90023A5F5 /* ActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionView.m; sourceTree = "<group>"; };
 		4713F60E1B671C04005690F2 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		4713F60F1B671C04005690F2 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		4713F6161B671C04005690F2 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
@@ -573,6 +618,34 @@
 		47535DE21B8B0DCA002BC02F /* AFNetManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetManage.m; sourceTree = "<group>"; };
 		47535DE51B8B1B43002BC02F /* CodingBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodingBanner.h; sourceTree = "<group>"; };
 		47535DE61B8B1B43002BC02F /* CodingBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodingBanner.m; sourceTree = "<group>"; };
+		47535DE81B8C176B002BC02F /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		47535DE91B8C176B002BC02F /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		47535DEB1B8C4C88002BC02F /* CircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTableViewCell.h; sourceTree = "<group>"; };
+		47535DEC1B8C4C88002BC02F /* CircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTableViewCell.m; sourceTree = "<group>"; };
+		47535DEE1B8C63B1002BC02F /* MengTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MengTableViewCell.h; sourceTree = "<group>"; };
+		47535DEF1B8C63B1002BC02F /* MengTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MengTableViewCell.m; sourceTree = "<group>"; };
+		477037A01B9DAED800734765 /* PatientsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsTableViewCell.h; sourceTree = "<group>"; };
+		477037A11B9DAED800734765 /* PatientsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsTableViewCell.m; sourceTree = "<group>"; };
+		477037A31B9E7F4D00734765 /* PDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDetailViewController.h; sourceTree = "<group>"; };
+		477037A41B9E7F4D00734765 /* PDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDetailViewController.m; sourceTree = "<group>"; };
+		477037A61B9E8F6A00734765 /* PHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHeaderView.h; sourceTree = "<group>"; };
+		477037A71B9E8F6A00734765 /* PHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHeaderView.m; sourceTree = "<group>"; };
+		477037A91B9EE4D400734765 /* VideoHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoHistoryTableViewCell.h; sourceTree = "<group>"; };
+		477037AA1B9EE4D400734765 /* VideoHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoHistoryTableViewCell.m; sourceTree = "<group>"; };
+		477037AC1B9EE51200734765 /* PatientsRecorderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsRecorderTableViewCell.h; sourceTree = "<group>"; };
+		477037AD1B9EE51200734765 /* PatientsRecorderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsRecorderTableViewCell.m; sourceTree = "<group>"; };
+		477037AF1B9FD73100734765 /* MoreButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreButtonTableViewCell.h; sourceTree = "<group>"; };
+		477037B01B9FD73100734765 /* MoreButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreButtonTableViewCell.m; sourceTree = "<group>"; };
+		477037B21B9FFA7700734765 /* PVideoHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVideoHistoryViewController.h; sourceTree = "<group>"; };
+		477037B31B9FFA7700734765 /* PVideoHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVideoHistoryViewController.m; sourceTree = "<group>"; };
+		477037B81BA0012800734765 /* PRemarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRemarkViewController.h; sourceTree = "<group>"; };
+		477037B91BA0012800734765 /* PRemarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRemarkViewController.m; sourceTree = "<group>"; };
+		477037BB1BA008C400734765 /* CloudAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudAskViewController.h; sourceTree = "<group>"; };
+		477037BC1BA008C400734765 /* CloudAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudAskViewController.m; sourceTree = "<group>"; };
+		477037C11BA013E000734765 /* PRecentTreatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRecentTreatTableViewCell.h; sourceTree = "<group>"; };
+		477037C21BA013E000734765 /* PRecentTreatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRecentTreatTableViewCell.m; sourceTree = "<group>"; };
+		477038771BA07FA900734765 /* Pepar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pepar.h; sourceTree = "<group>"; };
+		477038781BA07FA900734765 /* Pepar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pepar.m; sourceTree = "<group>"; };
 		4786C1C41B82DA100019625C /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		4786C1C61B82DAA50019625C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		47D05B701B8222CA00B49D69 /* CIRFirstViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRFirstViewcontroller.h; sourceTree = "<group>"; };
@@ -591,6 +664,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470D39451B8ED07B0023A5F5 /* CoreVideo.framework in Frameworks */,
+				470D39431B8ED03E0023A5F5 /* CoreImage.framework in Frameworks */,
 				4786C1C71B82DAA50019625C /* libz.dylib in Frameworks */,
 				765F80E50EFD5FCD65F29CBE /* libPods.a in Frameworks */,
 				4786C1C51B82DA100019625C /* Reveal.framework in Frameworks */,
@@ -607,6 +682,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470D393E1B8EA10C0023A5F5 /* AddFriendVC(添加好友) */ = {
+			isa = PBXGroup;
+			children = (
+				470D393F1B8EA1320023A5F5 /* AdddFriendController.h */,
+				470D39401B8EA1320023A5F5 /* AdddFriendController.m */,
+				470D394C1B8EEF810023A5F5 /* AddFriendTableViewCell.h */,
+				470D394D1B8EEF810023A5F5 /* AddFriendTableViewCell.m */,
+				470D394F1B8EF5920023A5F5 /* FriendInfoViewController.h */,
+				470D39501B8EF5920023A5F5 /* FriendInfoViewController.m */,
+				470D39521B8EFCA10023A5F5 /* MainInfoTableViewCell.h */,
+				470D39531B8EFCA10023A5F5 /* MainInfoTableViewCell.m */,
+				470D39551B8EFCB50023A5F5 /* OtherInfoTableViewCell.h */,
+				470D39561B8EFCB50023A5F5 /* OtherInfoTableViewCell.m */,
+				470D39581B8F08F90023A5F5 /* ActionView.h */,
+				470D39591B8F08F90023A5F5 /* ActionView.m */,
+			);
+			path = "AddFriendVC(添加好友)";
+			sourceTree = "<group>";
+		};
 		4713F60D1B671C04005690F2 /* FifVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +715,26 @@
 			children = (
 				4713F6161B671C04005690F2 /* FourthViewController.h */,
 				4713F6171B671C04005690F2 /* FourthViewController.m */,
+				477037A01B9DAED800734765 /* PatientsTableViewCell.h */,
+				477037A11B9DAED800734765 /* PatientsTableViewCell.m */,
+				477037A31B9E7F4D00734765 /* PDetailViewController.h */,
+				477037A41B9E7F4D00734765 /* PDetailViewController.m */,
+				477037A91B9EE4D400734765 /* VideoHistoryTableViewCell.h */,
+				477037AA1B9EE4D400734765 /* VideoHistoryTableViewCell.m */,
+				477037AC1B9EE51200734765 /* PatientsRecorderTableViewCell.h */,
+				477037AD1B9EE51200734765 /* PatientsRecorderTableViewCell.m */,
+				477037AF1B9FD73100734765 /* MoreButtonTableViewCell.h */,
+				477037B01B9FD73100734765 /* MoreButtonTableViewCell.m */,
+				477037A61B9E8F6A00734765 /* PHeaderView.h */,
+				477037A71B9E8F6A00734765 /* PHeaderView.m */,
+				477037B21B9FFA7700734765 /* PVideoHistoryViewController.h */,
+				477037B31B9FFA7700734765 /* PVideoHistoryViewController.m */,
+				477037B81BA0012800734765 /* PRemarkViewController.h */,
+				477037B91BA0012800734765 /* PRemarkViewController.m */,
+				477037BB1BA008C400734765 /* CloudAskViewController.h */,
+				477037BC1BA008C400734765 /* CloudAskViewController.m */,
+				477037C11BA013E000734765 /* PRecentTreatTableViewCell.h */,
+				477037C21BA013E000734765 /* PRecentTreatTableViewCell.m */,
 			);
 			path = FouVC;
 			sourceTree = "<group>";
@@ -643,10 +757,17 @@
 		4713F61B1B671C04005690F2 /* ThirdVC */ = {
 			isa = PBXGroup;
 			children = (
+				470D393E1B8EA10C0023A5F5 /* AddFriendVC(添加好友) */,
 				4713F61C1B671C04005690F2 /* ThirdViewController.h */,
 				4713F61D1B671C04005690F2 /* ThirdViewController.m */,
+				47535DEB1B8C4C88002BC02F /* CircleTableViewCell.h */,
+				47535DEC1B8C4C88002BC02F /* CircleTableViewCell.m */,
+				47535DEE1B8C63B1002BC02F /* MengTableViewCell.h */,
+				47535DEF1B8C63B1002BC02F /* MengTableViewCell.m */,
 				47535DE51B8B1B43002BC02F /* CodingBanner.h */,
 				47535DE61B8B1B43002BC02F /* CodingBanner.m */,
+				47535DE81B8C176B002BC02F /* HeaderView.h */,
+				47535DE91B8C176B002BC02F /* HeaderView.m */,
 			);
 			path = ThirdVC;
 			sourceTree = "<group>";
@@ -1139,6 +1260,8 @@
 				47535CF11B8B0D48002BC02F /* UIImage+FontAwesome.m */,
 				47535CF21B8B0D48002BC02F /* UIImageView+Common.h */,
 				47535CF31B8B0D48002BC02F /* UIImageView+Common.m */,
+				470D39491B8EDB4D0023A5F5 /* UIImage+Common.h */,
+				470D394A1B8EDB4D0023A5F5 /* UIImage+Common.m */,
 				47535CF41B8B0D48002BC02F /* UILabel+Common.h */,
 				47535CF51B8B0D48002BC02F /* UILabel+Common.m */,
 				47535CF61B8B0D48002BC02F /* UIScrollView+Common.h */,
@@ -1147,6 +1270,10 @@
 				47535CF91B8B0D48002BC02F /* UITextField+Common.m */,
 				47535CFA1B8B0D48002BC02F /* UIView+Common.h */,
 				47535CFB1B8B0D48002BC02F /* UIView+Common.m */,
+				470D393B1B8DCEE10023A5F5 /* UITableView+Common.h */,
+				470D393C1B8DCEE10023A5F5 /* UITableView+Common.m */,
+				470D39461B8EDA800023A5F5 /* UISearchBar+Common.h */,
+				470D39471B8EDA800023A5F5 /* UISearchBar+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1171,6 +1298,7 @@
 		47535D071B8B0D48002BC02F /* Vendor(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				477038761BA07FA900734765 /* peper */,
 				47535D081B8B0D48002BC02F /* AutoSlideScrollView */,
 			);
 			path = "Vendor(第三方)";
@@ -1198,6 +1326,15 @@
 			path = "NetModel(网络有关)";
 			sourceTree = "<group>";
 		};
+		477038761BA07FA900734765 /* peper */ = {
+			isa = PBXGroup;
+			children = (
+				477038771BA07FA900734765 /* Pepar.h */,
+				477038781BA07FA900734765 /* Pepar.m */,
+			);
+			path = peper;
+			sourceTree = "<group>";
+		};
 		87F0D05686AE91783DC12678 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1210,6 +1347,8 @@
 		DFB90299E89D5A444B6E38AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				470D39441B8ED07B0023A5F5 /* CoreVideo.framework */,
+				470D39421B8ED03E0023A5F5 /* CoreImage.framework */,
 				4786C1C61B82DAA50019625C /* libz.dylib */,
 				4786C1C41B82DA100019625C /* Reveal.framework */,
 				82350AE39228937EA13ECD97 /* libPods.a */,
@@ -1534,10 +1673,15 @@
 				47535DD41B8B0D49002BC02F /* UIScrollView+Common.m in Sources */,
 				47535DC51B8B0D49002BC02F /* FAImageView.m in Sources */,
 				4713F6261B671C04005690F2 /* BaseViewController.m in Sources */,
+				470D39571B8EFCB50023A5F5 /* OtherInfoTableViewCell.m in Sources */,
 				4713F6221B671C04005690F2 /* FifthViewController.m in Sources */,
+				470D39481B8EDA800023A5F5 /* UISearchBar+Common.m in Sources */,
 				47535DCA1B8B0D49002BC02F /* NSString+Common.m in Sources */,
+				47535DED1B8C4C88002BC02F /* CircleTableViewCell.m in Sources */,
 				472164701B8AB07300441745 /* TweetCell.m in Sources */,
+				477037AE1B9EE51200734765 /* PatientsRecorderTableViewCell.m in Sources */,
 				47535DE41B8B0DCA002BC02F /* AFNetManage.m in Sources */,
+				477037BD1BA008C400734765 /* CloudAskViewController.m in Sources */,
 				47535DD61B8B0D49002BC02F /* UIView+Common.m in Sources */,
 				472164371B8AAFBE00441745 /* BlockDetailViewController.m in Sources */,
 				47535DC71B8B0D49002BC02F /* NSDate+convenience.m in Sources */,
@@ -1554,29 +1698,39 @@
 				47535DCD1B8B0D49002BC02F /* UIButton+Common.m in Sources */,
 				47535DE71B8B1B43002BC02F /* CodingBanner.m in Sources */,
 				47535C041B8AEF92002BC02F /* LoginViewController.m in Sources */,
+				470D394E1B8EEF810023A5F5 /* AddFriendTableViewCell.m in Sources */,
 				47535DE31B8B0DCA002BC02F /* AFNetAPI.m in Sources */,
 				47535DD71B8B0D49002BC02F /* TapImage.m in Sources */,
 				472164711B8AB07300441745 /* TweetCommentCell.m in Sources */,
 				47535DD31B8B0D49002BC02F /* UILabel+Common.m in Sources */,
 				47535DC61B8B0D49002BC02F /* NSDate+Common.m in Sources */,
+				477037AB1B9EE4D400734765 /* VideoHistoryTableViewCell.m in Sources */,
+				470D395A1B8F08F90023A5F5 /* ActionView.m in Sources */,
+				47535DEA1B8C176B002BC02F /* HeaderView.m in Sources */,
 				4721643C1B8AAFBE00441745 /* NSThreadViewController.m in Sources */,
 				472164731B8AB07300441745 /* User.m in Sources */,
 				47535DDB1B8B0D49002BC02F /* Utils.m in Sources */,
 				472164691B8AB07300441745 /* ImageViewController.m in Sources */,
 				47535DCB1B8B0D49002BC02F /* NSString+FontAwesome.m in Sources */,
+				477037A81B9E8F6A00734765 /* PHeaderView.m in Sources */,
 				47535DCC1B8B0D49002BC02F /* NSTextAttachment+Common.m in Sources */,
 				47D05B721B8222CA00B49D69 /* CIRFirstViewcontroller.m in Sources */,
 				472164381B8AAFBE00441745 /* BlockViewController.m in Sources */,
 				47535DDC1B8B0D49002BC02F /* AutoSlideScrollView.m in Sources */,
 				47535DCF1B8B0D49002BC02F /* UIDevice+Info.m in Sources */,
+				477037A51B9E7F4D00734765 /* PDetailViewController.m in Sources */,
 				47D05B751B8222E000B49D69 /* CIRSecondViewController.m in Sources */,
 				4721646B1B8AB07300441745 /* PicEnlargeViewController.m in Sources */,
 				472164481B8AAFBE00441745 /* ViewController.m in Sources */,
 				471797541B621F580027ED9E /* AppDelegate.m in Sources */,
+				477038791BA07FA900734765 /* Pepar.m in Sources */,
 				47535DC91B8B0D49002BC02F /* NSObject+Common.m in Sources */,
 				472164681B8AB07300441745 /* EmojiViewController.m in Sources */,
+				477037B11B9FD73100734765 /* MoreButtonTableViewCell.m in Sources */,
+				477037B41B9FFA7700734765 /* PVideoHistoryViewController.m in Sources */,
 				47535DD81B8B0D49002BC02F /* TapImageView.m in Sources */,
 				472164721B8AB07300441745 /* TweetMoreCommentCell.m in Sources */,
+				470D394B1B8EDB4D0023A5F5 /* UIImage+Common.m in Sources */,
 				4713F6271B671C04005690F2 /* ThirdViewController.m in Sources */,
 				47535D0E1B8B0D48002BC02F /* MyTabbarViewController.m in Sources */,
 				472164391B8AAFBE00441745 /* DelegateDetailViewController.m in Sources */,
@@ -1585,11 +1739,19 @@
 				47535BBE1B8AB1F8002BC02F /* MaoPaoController.m in Sources */,
 				47D05B781B8222F300B49D69 /* CIRThirdViewController.m in Sources */,
 				472164361B8AAFBE00441745 /* AutoTableViewCell.m in Sources */,
+				477037A21B9DAED800734765 /* PatientsTableViewCell.m in Sources */,
 				47535DDA1B8B0D49002BC02F /* UITTTAttributedLabel.m in Sources */,
 				47535DD01B8B0D49002BC02F /* UIFont+FontAwesome.m in Sources */,
 				4721646D1B8AB07300441745 /* Comment.m in Sources */,
+				477037BA1BA0012800734765 /* PRemarkViewController.m in Sources */,
+				470D39541B8EFCA10023A5F5 /* MainInfoTableViewCell.m in Sources */,
+				477037C31BA013E000734765 /* PRecentTreatTableViewCell.m in Sources */,
+				470D39511B8EF5920023A5F5 /* FriendInfoViewController.m in Sources */,
 				47535D0F1B8B0D48002BC02F /* SystemTabbarViewController.m in Sources */,
 				47535BCC1B8AE613002BC02F /* WelcomeView.m in Sources */,
+				470D39411B8EA1320023A5F5 /* AdddFriendController.m in Sources */,
+				47535DF01B8C63B1002BC02F /* MengTableViewCell.m in Sources */,
+				470D393D1B8DCEE10023A5F5 /* UITableView+Common.m in Sources */,
 				47535DD51B8B0D49002BC02F /* UITextField+Common.m in Sources */,
 				471797511B621F580027ED9E /* main.m in Sources */,
 				4721643A1B8AAFBE00441745 /* DelegateViewController.m in Sources */,

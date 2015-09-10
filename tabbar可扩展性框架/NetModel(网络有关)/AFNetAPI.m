@@ -9,6 +9,7 @@
 #import "AFNetAPI.h"
 #import "AFNetManage.h"
 #import "Tweet.h"
+#import "CodingBanner.h"
 
 @implementation AFNetAPI
 
@@ -39,6 +40,18 @@
         }
     }];
     
+}
+
+- (void)request_BannersWithBlock:(void (^)(id data, NSError *error))block{
+    [[AFNetManage shareClient] requestJsonDataWithPath:@"api/banner/type/app" withParams:nil withMethodType:Get autoShowError:NO andBlock:^(id data, NSError *error) {
+        if (data) {
+            data = [data valueForKey:@"data"];
+            NSArray *resultA = [CodingBanner objectArrayWithKeyValuesArray:data];
+            block(resultA, nil);
+        }else{
+            block(nil, error);
+        }
+    }];
 }
 
 

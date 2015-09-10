@@ -39,11 +39,11 @@
 
     
     //启动页
-    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
-        IntroducViewController *vc = [[IntroducViewController alloc] init];
-        self.window.rootViewController = vc;
-
-    }
+//    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
+//        IntroducViewController *vc = [[IntroducViewController alloc] init];
+//        self.window.rootViewController = vc;
+//
+//    }
     
     return YES;
 }

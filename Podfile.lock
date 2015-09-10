@@ -21,9 +21,10 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JazzHands (2.0.3)
+  - LTNavigationBar (2.1.0)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
-  - MJExtension (2.5.8)
+  - MJExtension (2.5.9)
   - NSString+Emoji (0.2.0)
   - NYXImagesKit (2.3)
   - SDWebImage (3.7.3):
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - JazzHands (~> 2.0.3)
+  - LTNavigationBar (~> 2.1.0)
   - Masonry
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 2.5.7)
@@ -47,9 +49,10 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   JazzHands: 0f3c8578f33f45b2fe73975deed6a5f02f9c22d3
+  LTNavigationBar: 8d2373e61ac08c16b6235c0450051541941f1fec
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  MJExtension: e6f30c738b7618552ee5563fcf4eadf552f997e0
+  MJExtension: 2330aeb6c83428c820749290bf766e81827cda65
   NSString+Emoji: 127da93993ac7c01eadb2edbb039cda89a1369f4
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84

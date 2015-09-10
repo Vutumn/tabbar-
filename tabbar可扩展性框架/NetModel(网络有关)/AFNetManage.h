@@ -26,4 +26,10 @@ typedef enum{
                  withMethodType:(NetworkMethod)method
                        andBlock:(void (^)(id data, NSError *errro))block;
 
+- (void)requestJsonDataWithPath:(NSString *)aPath
+                     withParams:(NSDictionary *)params
+                 withMethodType:(NetworkMethod)method
+                  autoShowError:(BOOL)autoShowError
+                       andBlock:(void (^)(id data, NSError *error))block;
+
 @end

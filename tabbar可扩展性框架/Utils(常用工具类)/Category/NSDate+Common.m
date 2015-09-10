@@ -117,6 +117,25 @@
     return displayStr;
 }
 
+//项目需要改写stringDisplay_HHmm
+- (NSString *)stringDisplay_HHmm_Update{
+    NSString *displayStr = @"";
+   if ([self leftDayCount] > 9){
+        displayStr = [self stringWithFormat:@"yy/MM/dd HH:mm"];
+   }if ([self leftDayCount] < 9 && [self leftDayCount] > 0) {
+       displayStr = [NSString stringWithFormat:@"%ld 天前", [self leftDayCount]];
+   }
+
+   else if ([self hoursAgo] > 0){
+        displayStr = [self stringWithFormat:@"今天 HH:mm"];
+    }else if ([self minutesAgo] > 0){
+        displayStr = [NSString stringWithFormat:@"%ld 分钟前", (long)[self minutesAgo]];
+    } else{
+        displayStr = @"刚刚";
+    }
+    return displayStr;
+}
+
 - (NSString *)DatetimeConversionAndDatetime:(NSNumber *)datetime
 {
     NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:datetime.doubleValue/1000];

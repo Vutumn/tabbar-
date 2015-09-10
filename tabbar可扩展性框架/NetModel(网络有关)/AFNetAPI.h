@@ -13,5 +13,7 @@
 
 - (void)request_paopao_Block:(void (^)(id data, NSError *error))block;
 
+- (void)request_BannersWithBlock:(void (^)(id data, NSError *error))block;
+
 + (instancetype)sharedManager;
 @end

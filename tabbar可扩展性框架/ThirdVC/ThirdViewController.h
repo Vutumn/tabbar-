@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : BBaseViewController
 
 @end

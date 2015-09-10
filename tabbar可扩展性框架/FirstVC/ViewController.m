@@ -78,6 +78,7 @@
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
     [_tableView registerClass:[AutoTableViewCell class] forCellReuseIdentifier:kAutoCellIdentifier];
     
+    
     [self.view addSubview:_tableView];
     
     [_tableView makeConstraints:^(MASConstraintMaker *make) {
