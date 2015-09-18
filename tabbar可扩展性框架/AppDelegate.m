@@ -29,7 +29,6 @@
     _systab = [[SystemTabbarViewController alloc] init];
   
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[IntroducViewController alloc] init]];
-    IntroducViewController *vc = [[IntroducViewController alloc] init];
    
     
     self.window.rootViewController = _systab;
@@ -40,10 +39,11 @@
 
     
     //启动页
-    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
-        welcomeView *welView = [[welcomeView alloc]initWithFrame:CGRectMake(0, 0, KDeviceWidth, KDeviceHeight)];
-        [self.window addSubview:welView];
-    }
+//    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"isFirst"]) {
+//        IntroducViewController *vc = [[IntroducViewController alloc] init];
+//        self.window.rootViewController = vc;
+//
+//    }
     
     return YES;
 }

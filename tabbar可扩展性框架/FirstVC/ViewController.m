@@ -11,8 +11,8 @@
 #import "EmojiViewController.h"
 #import "AutoTableViewCell.h"
 #import "ProductImageViewController.h"
-#import "welcomeView.h"
-#import "maopaoController.h"
+#import "WelcomeView.h"
+#import "MaoPaoController.h"
 #import <objc/runtime.h>
 #import "BlockViewController.h"
 #import "DelegateViewController.h"
@@ -78,6 +78,7 @@
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
     [_tableView registerClass:[AutoTableViewCell class] forCellReuseIdentifier:kAutoCellIdentifier];
     
+    
     [self.view addSubview:_tableView];
     
     [_tableView makeConstraints:^(MASConstraintMaker *make) {
@@ -132,7 +133,7 @@
             vc = [[ProductImageViewController alloc] init];
             break;
         case 5:
-            vc = [[maopaoController alloc] init];
+            vc = [[MaoPaoController alloc] init];
             break;
         case 6:
             vc = [[BlockViewController alloc]init];
