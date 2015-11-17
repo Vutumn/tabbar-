@@ -16,6 +16,8 @@
 #import <objc/runtime.h>
 #import "BlockViewController.h"
 #import "DelegateViewController.h"
+#import "HitTestViewController.h"
+
 #define kCellIdentifier @"kCellIdentifier"
 #define kAutoCellIdentifier @"kAutoCellIdentifier"
 
@@ -61,7 +63,7 @@
 
     
     _test = [[NSArray alloc] init];
-    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", @"生成一张纯色image", @"冒泡界面", @"block", @"代理", nil];
+    _nameArr = [NSArray arrayWithObjects:@"点击图片放大",@"emoji表情转换",@"多线程", @"关于label", @"生成一张纯色image", @"冒泡界面", @"block", @"代理", @"响应链", nil];
 }
 
 
@@ -141,6 +143,8 @@
         case 7:
             vc = [[DelegateViewController alloc]init];
             break;
+        case 8:
+            vc = [[HitTestViewController alloc] init];
         default:
             break;
     }

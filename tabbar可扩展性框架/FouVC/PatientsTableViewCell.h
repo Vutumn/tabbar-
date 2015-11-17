@@ -14,4 +14,6 @@ static NSString *const kPatientsCellIdentifier = @"PatientsCell";
 @interface PatientsTableViewCell : UITableViewCell
 @property (nonatomic, strong) UISwitch *switchbutton;
 
+
++ (CGFloat)cellHeightWithObj:(id)obj;
 @end

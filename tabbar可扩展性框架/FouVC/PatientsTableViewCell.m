@@ -11,6 +11,7 @@
 @interface PatientsTableViewCell()
 @property (nonatomic, strong) UIImageView *userImage;
 @property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UIButton *testButton;
 
 @end
 
@@ -22,6 +23,7 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.backgroundColor = [UIColor clearColor];
+
         
         [self InitWithSubViews];
     }
@@ -35,6 +37,7 @@
     [self addSubview:self.userImage];
     [self addSubview:self.nameLabel];
     [self addSubview:self.switchbutton];
+    [self addSubview:self.testButton];
 }
 
 - (UIImageView *)userImage
@@ -83,6 +86,35 @@
         }];
     }
     return _switchbutton;
+}
+
+- (UIButton *)testButton
+{
+    if (!_testButton) {
+        _testButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _testButton.backgroundColor = [UIColor redColor];
+        [_testButton addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_testButton];
+        
+        [_testButton makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(self).offset(-10);
+            make.centerY.equalTo(self.centerY);
+            make.width.height.equalTo(@30);
+        }];
+    }
+    return _testButton;
+}
+
+- (void)buttonAction
+{
+    
+}
+
+#pragma mark -Height
++ (CGFloat)cellHeightWithObj:(id)obj{
+    
+    return 56;
+    
 }
 
 @end

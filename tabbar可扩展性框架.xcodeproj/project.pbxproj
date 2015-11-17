@@ -263,6 +263,11 @@
 		47535DEA1B8C176B002BC02F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DE91B8C176B002BC02F /* HeaderView.m */; };
 		47535DED1B8C4C88002BC02F /* CircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DEC1B8C4C88002BC02F /* CircleTableViewCell.m */; };
 		47535DF01B8C63B1002BC02F /* MengTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47535DEF1B8C63B1002BC02F /* MengTableViewCell.m */; };
+		475880C01BA1811100A42F41 /* UIViewController+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 475880BF1BA1811100A42F41 /* UIViewController+AOP.m */; };
+		475880C41BA18E9800A42F41 /* HitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475880C31BA18E9800A42F41 /* HitTestViewController.m */; };
+		475880C71BA27A3F00A42F41 /* HTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 475880C61BA27A3F00A42F41 /* HTestView.m */; };
+		475880CD1BA695DD00A42F41 /* HTestViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 475880CC1BA695DD00A42F41 /* HTestViewB.m */; };
+		475880D51BA6A62500A42F41 /* UIControl+DisableClickRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 475880D41BA6A62500A42F41 /* UIControl+DisableClickRepeat.m */; };
 		477037A21B9DAED800734765 /* PatientsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A11B9DAED800734765 /* PatientsTableViewCell.m */; };
 		477037A51B9E7F4D00734765 /* PDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A41B9E7F4D00734765 /* PDetailViewController.m */; };
 		477037A81B9E8F6A00734765 /* PHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 477037A71B9E8F6A00734765 /* PHeaderView.m */; };
@@ -624,6 +629,16 @@
 		47535DEC1B8C4C88002BC02F /* CircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTableViewCell.m; sourceTree = "<group>"; };
 		47535DEE1B8C63B1002BC02F /* MengTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MengTableViewCell.h; sourceTree = "<group>"; };
 		47535DEF1B8C63B1002BC02F /* MengTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MengTableViewCell.m; sourceTree = "<group>"; };
+		475880BE1BA1811100A42F41 /* UIViewController+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AOP.h"; sourceTree = "<group>"; };
+		475880BF1BA1811100A42F41 /* UIViewController+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AOP.m"; sourceTree = "<group>"; };
+		475880C21BA18E9800A42F41 /* HitTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestViewController.h; sourceTree = "<group>"; };
+		475880C31BA18E9800A42F41 /* HitTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestViewController.m; sourceTree = "<group>"; };
+		475880C51BA27A3F00A42F41 /* HTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTestView.h; sourceTree = "<group>"; };
+		475880C61BA27A3F00A42F41 /* HTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTestView.m; sourceTree = "<group>"; };
+		475880CB1BA695DD00A42F41 /* HTestViewB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTestViewB.h; sourceTree = "<group>"; };
+		475880CC1BA695DD00A42F41 /* HTestViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTestViewB.m; sourceTree = "<group>"; };
+		475880D31BA6A62500A42F41 /* UIControl+DisableClickRepeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+DisableClickRepeat.h"; sourceTree = "<group>"; };
+		475880D41BA6A62500A42F41 /* UIControl+DisableClickRepeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+DisableClickRepeat.m"; sourceTree = "<group>"; };
 		477037A01B9DAED800734765 /* PatientsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsTableViewCell.h; sourceTree = "<group>"; };
 		477037A11B9DAED800734765 /* PatientsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsTableViewCell.m; sourceTree = "<group>"; };
 		477037A31B9E7F4D00734765 /* PDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDetailViewController.h; sourceTree = "<group>"; };
@@ -847,6 +862,7 @@
 		4721640A1B8AAFBE00441745 /* FirstVC */ = {
 			isa = PBXGroup;
 			children = (
+				475880C11BA18E8700A42F41 /* HitTest(响应链) */,
 				4721644D1B8AB07300441745 /* EmojiVC(表情转换) */,
 				472164501B8AB07300441745 /* PicEnlargeVC(图片放大) */,
 				472164591B8AB07300441745 /* Tweet(冒泡) */,
@@ -963,6 +979,8 @@
 			children = (
 				47535C0F1B8B0D48002BC02F /* BBaseViewController.h */,
 				47535C101B8B0D48002BC02F /* BBaseViewController.m */,
+				475880BE1BA1811100A42F41 /* UIViewController+AOP.h */,
+				475880BF1BA1811100A42F41 /* UIViewController+AOP.m */,
 			);
 			path = "BaseVC(基类)";
 			sourceTree = "<group>";
@@ -1274,6 +1292,8 @@
 				470D393C1B8DCEE10023A5F5 /* UITableView+Common.m */,
 				470D39461B8EDA800023A5F5 /* UISearchBar+Common.h */,
 				470D39471B8EDA800023A5F5 /* UISearchBar+Common.m */,
+				475880D31BA6A62500A42F41 /* UIControl+DisableClickRepeat.h */,
+				475880D41BA6A62500A42F41 /* UIControl+DisableClickRepeat.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1324,6 +1344,19 @@
 				47535DE21B8B0DCA002BC02F /* AFNetManage.m */,
 			);
 			path = "NetModel(网络有关)";
+			sourceTree = "<group>";
+		};
+		475880C11BA18E8700A42F41 /* HitTest(响应链) */ = {
+			isa = PBXGroup;
+			children = (
+				475880C21BA18E9800A42F41 /* HitTestViewController.h */,
+				475880C31BA18E9800A42F41 /* HitTestViewController.m */,
+				475880C51BA27A3F00A42F41 /* HTestView.h */,
+				475880C61BA27A3F00A42F41 /* HTestView.m */,
+				475880CB1BA695DD00A42F41 /* HTestViewB.h */,
+				475880CC1BA695DD00A42F41 /* HTestViewB.m */,
+			);
+			path = "HitTest(响应链)";
 			sourceTree = "<group>";
 		};
 		477038761BA07FA900734765 /* peper */ = {
@@ -1675,6 +1708,7 @@
 				4713F6261B671C04005690F2 /* BaseViewController.m in Sources */,
 				470D39571B8EFCB50023A5F5 /* OtherInfoTableViewCell.m in Sources */,
 				4713F6221B671C04005690F2 /* FifthViewController.m in Sources */,
+				475880C01BA1811100A42F41 /* UIViewController+AOP.m in Sources */,
 				470D39481B8EDA800023A5F5 /* UISearchBar+Common.m in Sources */,
 				47535DCA1B8B0D49002BC02F /* NSString+Common.m in Sources */,
 				47535DED1B8C4C88002BC02F /* CircleTableViewCell.m in Sources */,
@@ -1687,6 +1721,7 @@
 				47535DC71B8B0D49002BC02F /* NSDate+convenience.m in Sources */,
 				4721646A1B8AB07300441745 /* MyPhoto.m in Sources */,
 				47535DD91B8B0D49002BC02F /* UITapImageView.m in Sources */,
+				475880C41BA18E9800A42F41 /* HitTestViewController.m in Sources */,
 				4721646F1B8AB07300441745 /* Tweet.m in Sources */,
 				47535BCB1B8AE613002BC02F /* IntroducViewController.m in Sources */,
 				47535DD11B8B0D49002BC02F /* UIImage+FontAwesome.m in Sources */,
@@ -1698,6 +1733,7 @@
 				47535DCD1B8B0D49002BC02F /* UIButton+Common.m in Sources */,
 				47535DE71B8B1B43002BC02F /* CodingBanner.m in Sources */,
 				47535C041B8AEF92002BC02F /* LoginViewController.m in Sources */,
+				475880D51BA6A62500A42F41 /* UIControl+DisableClickRepeat.m in Sources */,
 				470D394E1B8EEF810023A5F5 /* AddFriendTableViewCell.m in Sources */,
 				47535DE31B8B0DCA002BC02F /* AFNetAPI.m in Sources */,
 				47535DD71B8B0D49002BC02F /* TapImage.m in Sources */,
@@ -1707,6 +1743,7 @@
 				477037AB1B9EE4D400734765 /* VideoHistoryTableViewCell.m in Sources */,
 				470D395A1B8F08F90023A5F5 /* ActionView.m in Sources */,
 				47535DEA1B8C176B002BC02F /* HeaderView.m in Sources */,
+				475880CD1BA695DD00A42F41 /* HTestViewB.m in Sources */,
 				4721643C1B8AAFBE00441745 /* NSThreadViewController.m in Sources */,
 				472164731B8AB07300441745 /* User.m in Sources */,
 				47535DDB1B8B0D49002BC02F /* Utils.m in Sources */,
@@ -1749,6 +1786,7 @@
 				470D39511B8EF5920023A5F5 /* FriendInfoViewController.m in Sources */,
 				47535D0F1B8B0D48002BC02F /* SystemTabbarViewController.m in Sources */,
 				47535BCC1B8AE613002BC02F /* WelcomeView.m in Sources */,
+				475880C71BA27A3F00A42F41 /* HTestView.m in Sources */,
 				470D39411B8EA1320023A5F5 /* AdddFriendController.m in Sources */,
 				47535DF01B8C63B1002BC02F /* MengTableViewCell.m in Sources */,
 				470D393D1B8DCEE10023A5F5 /* UITableView+Common.m in Sources */,
