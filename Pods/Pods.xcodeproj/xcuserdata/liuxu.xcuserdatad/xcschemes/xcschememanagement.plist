@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>JazzHands.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>LTNavigationBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>NYXImagesKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -44,6 +59,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>SMPageControl.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -52,6 +72,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>000153FAEE9C8A037F0834966757E02B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>278BFC76F9E89707A7B62EB2C2FE4485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F3B46B536A538714FB4E47CB3F0CE20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>348EA5D206E9D54C057FFFB87D0FA247</key>
 		<dict>
 			<key>primary</key>
@@ -62,7 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>40999E386C5F53BDC09769A9D2F15FAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>49863C4AAED3282567B270A0EC5ABEAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D784FF5BD4C53E7CBC373247BD00CFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6E3C913B7424364638CC4204ABFD1CD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>705A59B08D60B1711A4B4033F5BEEE61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73958F151376C7675D64D889AD3D3222</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,12 +172,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C0FA2D916332361566BFFB8C560DF178</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C996DFDC4749722A3900D8D3E4DD8ADF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CA9C1D92667429113E81421467593A92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CCBEDDB6E83CB0E5A4C801A3ACE83F83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E982817BD5626C0629FC637A5F7EA35B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
