@@ -22,6 +22,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //崩溃捕捉
+    //判断是否存在crash日志
+     //crashman
+    
+    
+    
+    
+    
     //登录判断，两种选择，
    
     
