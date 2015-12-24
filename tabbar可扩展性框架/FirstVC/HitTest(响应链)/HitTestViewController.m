@@ -8,8 +8,9 @@
 
 #import "HitTestViewController.h"
 #import "HTestView.h"
+#import "HTestViewB.h"
 
-@interface HitTestViewController()
+@interface HitTestViewController()<HTestViewBDelegate>
 @property (nonatomic, strong)UIButton *button;
 @property (nonatomic, strong)HTestView *tapView;
 
@@ -31,13 +32,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.tapView = [HTestView new];
+    self.tapView = [[HTestView alloc]initWithFrame:self.view.bounds];
+    self.tapView.delegate = self;
+    self.tapView.backgroundColor = [UIColor orangeColor];
     
     [self.view addSubview:self.tapView];
     
-    [_tapView makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+//    [_tapView makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view);
+//    }];
     
     NSLog(@"%@", _tapView.nextResponder);
     NSLog(@"%@", _tapView.nextResponder.nextResponder);
@@ -47,6 +50,10 @@
         NSLog(@"%@",_tapView.nextResponder.nextResponder.nextResponder.nextResponder.nextResponder.nextResponder);
     });
     
+}
+
+- (void)HTestViewBMethod {
+    NSLog(@"B");
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

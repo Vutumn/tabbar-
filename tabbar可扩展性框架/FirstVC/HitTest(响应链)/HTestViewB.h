@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
+@protocol HTestViewBDelegate <NSObject>
+
+- (void)HTestViewBMethod;
+
+@end
+
 @interface HTestViewB : UIView
+
+@property (nonatomic, weak) id<HTestViewBDelegate> delegate;
 
 @end

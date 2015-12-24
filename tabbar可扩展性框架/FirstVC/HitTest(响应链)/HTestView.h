@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Header.h"
+#import "HTestViewB.h"
 
-@interface HTestView : UIView
+@interface HTestView : UIView<HTestViewBDelegate>
+
+@property (nonatomic, weak) id<HTestViewBDelegate> delegate;
 
 @end

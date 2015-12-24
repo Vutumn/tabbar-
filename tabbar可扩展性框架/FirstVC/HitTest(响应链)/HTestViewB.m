@@ -45,15 +45,21 @@
 {
     if (!_buttonB) {
         _buttonB = [UIButton buttonWithType:UIButtonTypeCustom];
-        _buttonB.backgroundColor = [UIColor blueColor];
+        _buttonB.backgroundColor = [UIColor blackColor];
         [self addSubview:_buttonB];
-        
+        [_buttonB addTarget:self action:@selector(buttonBAction) forControlEvents:UIControlEventTouchDown];
         [_buttonB makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(self.center);
             make.width.height.equalTo(@100);
         }];
     }
     return _buttonB;
+}
+
+- (void)buttonBAction {
+    if ([self.delegate respondsToSelector:@selector(HTestViewBMethod)]) {
+        [self.delegate HTestViewBMethod];
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -61,19 +61,25 @@
     return _buttonA;
 }
 
-- (HTestViewB *)ViewB
+- (HTestViewB *)viewB
 {
     if (!_viewB) {
-        _viewB = [HTestViewB new];
+        _viewB = [[HTestViewB alloc]init];
         _viewB.backgroundColor = [UIColor yellowColor];
         [self addSubview:_viewB];
-        
+        _viewB.delegate = self;
         [_viewB makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(self.center);
             make.width.height.equalTo(@100);
         }];
     }
     return _viewB;
+}
+
+- (void)HTestViewBMethod {
+    if ([self.delegate respondsToSelector:@selector(HTestViewBMethod)]) {
+        [self.delegate HTestViewBMethod];
+    }
 }
 
 
