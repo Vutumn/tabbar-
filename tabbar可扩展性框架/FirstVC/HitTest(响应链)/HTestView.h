@@ -10,8 +10,7 @@
 #import "Header.h"
 #import "HTestViewB.h"
 
-@interface HTestView : UIView<HTestViewBDelegate>
+@interface HTestView : UIView
 
-@property (nonatomic, weak) id<HTestViewBDelegate> delegate;
 
 @end

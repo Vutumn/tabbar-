@@ -14,6 +14,8 @@
 @interface UIView (Common)
 @property (nonatomic, strong)BlankView *blankView;
 
+- (UIViewController *)findViewController;
+
 - (void)setY:(CGFloat)y;
 - (void)setX:(CGFloat)x;
 - (void)setOrigin:(CGPoint)origin;
