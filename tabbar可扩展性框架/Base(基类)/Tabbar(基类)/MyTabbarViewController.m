@@ -72,7 +72,7 @@
     UINavigationController *fouVC = [[UINavigationController alloc] initWithRootViewController:[[FourthViewController alloc] init]];
     UINavigationController *fifVC = [[UINavigationController alloc] initWithRootViewController:[[FifthViewController alloc] init]];
 
-    self.viewControllers = @[VC, baseVC, thVC, fouVC, fifVC,];
+    self.viewControllers = @[VC, baseVC, thVC, fouVC, fifVC];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabbar:) name:SHOW_TAB_BAR object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hiddenTabbar:) name:HIDDEN_TAB_BAR object:nil];
