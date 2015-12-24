@@ -48,7 +48,7 @@
     UINavigationController *fouVC = [[UINavigationController alloc] initWithRootViewController:[[FourthViewController alloc] init]];
     UINavigationController *fifVC = [[UINavigationController alloc] initWithRootViewController:[[FifthViewController alloc] init]];
     
-    self.viewControllers = @[VC, baseVC, thVC, fouVC, fifVC,];
+    self.viewControllers = @[VC, baseVC, thVC, fouVC, fifVC];
     [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *item, NSUInteger idx, BOOL *stop) {
         [item setTitle:titles[idx]];
        // [item setImage:[UIImage imageNamed:ImagesArr[idx]]];

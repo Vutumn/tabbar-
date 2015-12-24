@@ -281,6 +281,7 @@
 		477038791BA07FA900734765 /* Pepar.m in Sources */ = {isa = PBXBuildFile; fileRef = 477038781BA07FA900734765 /* Pepar.m */; };
 		4786C1C51B82DA100019625C /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4786C1C41B82DA100019625C /* Reveal.framework */; };
 		4786C1C71B82DAA50019625C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4786C1C61B82DAA50019625C /* libz.dylib */; };
+		47BB10FD1C06E51D001A3CCA /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BB10FC1C06E51D001A3CCA /* DrawRectView.m */; settings = {ASSET_TAGS = (); }; };
 		47D05B721B8222CA00B49D69 /* CIRFirstViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D05B711B8222CA00B49D69 /* CIRFirstViewcontroller.m */; };
 		47D05B751B8222E000B49D69 /* CIRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D05B741B8222E000B49D69 /* CIRSecondViewController.m */; };
 		47D05B781B8222F300B49D69 /* CIRThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D05B771B8222F300B49D69 /* CIRThirdViewController.m */; };
@@ -663,6 +664,8 @@
 		477038781BA07FA900734765 /* Pepar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pepar.m; sourceTree = "<group>"; };
 		4786C1C41B82DA100019625C /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		4786C1C61B82DAA50019625C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		47BB10FB1C06E51D001A3CCA /* DrawRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
+		47BB10FC1C06E51D001A3CCA /* DrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
 		47D05B701B8222CA00B49D69 /* CIRFirstViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRFirstViewcontroller.h; sourceTree = "<group>"; };
 		47D05B711B8222CA00B49D69 /* CIRFirstViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRFirstViewcontroller.m; sourceTree = "<group>"; };
 		47D05B731B8222E000B49D69 /* CIRSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSecondViewController.h; sourceTree = "<group>"; };
@@ -721,6 +724,8 @@
 			children = (
 				4713F60E1B671C04005690F2 /* FifthViewController.h */,
 				4713F60F1B671C04005690F2 /* FifthViewController.m */,
+				47BB10FB1C06E51D001A3CCA /* DrawRectView.h */,
+				47BB10FC1C06E51D001A3CCA /* DrawRectView.m */,
 			);
 			path = FifVC;
 			sourceTree = "<group>";
@@ -1401,6 +1406,7 @@
 				471797481B621F580027ED9E /* Frameworks */,
 				471797491B621F580027ED9E /* Resources */,
 				096C27C40BA7D2A1CB6BA4F4 /* Copy Pods Resources */,
+				B3081F8E6D12D013F6061D5C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1681,6 +1687,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B3081F8E6D12D013F6061D5C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E0CFCCC43FC30F9D94041C0D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1779,6 +1800,7 @@
 				477037A21B9DAED800734765 /* PatientsTableViewCell.m in Sources */,
 				47535DDA1B8B0D49002BC02F /* UITTTAttributedLabel.m in Sources */,
 				47535DD01B8B0D49002BC02F /* UIFont+FontAwesome.m in Sources */,
+				47BB10FD1C06E51D001A3CCA /* DrawRectView.m in Sources */,
 				4721646D1B8AB07300441745 /* Comment.m in Sources */,
 				477037BA1BA0012800734765 /* PRemarkViewController.m in Sources */,
 				470D39541B8EFCA10023A5F5 /* MainInfoTableViewCell.m in Sources */,

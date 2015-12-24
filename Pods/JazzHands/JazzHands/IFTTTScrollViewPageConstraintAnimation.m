@@ -7,12 +7,15 @@
 //
 
 #import "IFTTTScrollViewPageConstraintAnimation.h"
+#import "IFTTTFilmstrip.h"
 
 @interface IFTTTScrollViewPageConstraintAnimation ()
 
 @property (nonatomic, strong) UIView *superview;
 @property (nonatomic, strong) NSLayoutConstraint *constraint;
+@property (nonatomic, assign) CGFloat initialConstraintConstant;
 @property (nonatomic, assign) IFTTTHorizontalPositionAttribute attribute;
+@property (nonatomic, strong) IFTTTFilmstrip *constantFilmstrip;
 
 @end
 
@@ -23,8 +26,10 @@
     if ((self = [super init])) {
         _superview = superview;
         _constraint = constraint;
+        _initialConstraintConstant = constraint.constant;
         _pageWidth = pageWidth;
         _attribute = attribute;
+        _constantFilmstrip = [IFTTTFilmstrip new];
     }
     return self;
 }
@@ -42,6 +47,18 @@
 - (void)addKeyframeForTime:(CGFloat)time page:(CGFloat)page withEasingFunction:(IFTTTEasingFunction)easingFunction
 {
     [self addKeyframeForTime:time value:@(page) withEasingFunction:easingFunction];
+}
+
+- (void)addKeyframeForTime:(CGFloat)time page:(CGFloat)page constant:(CGFloat)constant
+{
+    [self addKeyframeForTime:time value:@(page)];
+    [self.constantFilmstrip setValue:@(constant) atTime:time];
+}
+
+- (void)addKeyframeForTime:(CGFloat)time page:(CGFloat)page constant:(CGFloat)constant withEasingFunction:(IFTTTEasingFunction)easingFunction
+{
+    [self addKeyframeForTime:time value:@(page) withEasingFunction:easingFunction];
+    [self.constantFilmstrip setValue:@(constant) atTime:time withEasingFunction:easingFunction];
 }
 
 - (void)animate:(CGFloat)time
@@ -62,7 +79,12 @@
             break;
     }
     
-    self.constraint.constant = (offset + page) * self.pageWidth;
+    CGFloat constant = 0.f;
+    if (!self.constantFilmstrip.isEmpty) {
+        constant = (CGFloat)[(NSNumber *)[self.constantFilmstrip valueAtTime:time] floatValue];
+    }
+    
+    self.constraint.constant = (offset + page) * self.pageWidth + self.initialConstraintConstant + constant;
     [self.superview layoutIfNeeded];
 }
 

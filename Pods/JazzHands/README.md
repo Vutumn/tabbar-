@@ -1,6 +1,8 @@
+[![Open Source at IFTTT](http://ifttt.github.io/images/open-source-ifttt.svg)](http://ifttt.github.io)
+
 ![Jazz Hands](./Example/Docs/jazzhands_banner.jpg)
 
-[![Build Status](https://travis-ci.org/IFTTT/JazzHands.svg?branch=master)](https://travis-ci.org/IFTTT/JazzHands) [![Coverage Status](https://coveralls.io/repos/IFTTT/JazzHands/badge.svg)](https://coveralls.io/r/IFTTT/JazzHands)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/JazzHands.svg)](http://cocoadocs.org/docsets/JazzHands) [![Build Status](https://travis-ci.org/IFTTT/JazzHands.svg?branch=master)](https://travis-ci.org/IFTTT/JazzHands) [![Coverage Status](https://coveralls.io/repos/IFTTT/JazzHands/badge.svg)](https://coveralls.io/r/IFTTT/JazzHands)
 
 Jazz Hands is a simple keyframe-based animation framework for UIKit. Animations can be controlled via gestures, scroll views, KVO, or ReactiveCocoa.
 
@@ -13,6 +15,10 @@ Jazz Hands is used extensively in [IF and DO by IFTTT for iPhone and iPad](https
 Open `JazzHandsDemo.xcworkspace` to see a simple demonstration of moving, scaling, fading, and transforming views in a scrolling app intro.
 
 To run the example project, clone the repo, and run `pod install` from the `Example` directory.
+
+##JazzHands in Swift
+
+Looking to incorporate Jazz Hands into your Swift project? Check out [`RazzleDazzle`](https://github.com/IFTTT/RazzleDazzle), our brand new scrolling keyframe animations library reimagined in Swift.
 
 ##Installation
 
@@ -82,7 +88,7 @@ Jazz Hands supports several types of animations:
 
 + **IFTTTAlphaAnimation** animates the `alpha` property _(creates fade effects)_.
 + **IFTTTRotationAnimation** animates a rotation transform in degrees _(for rotation effects)_.
-+ **IFTTTColorAnimation** animates the `backgroundColor` property.
++ **IFTTTBackgroundColorAnimation** animates the `backgroundColor` property.
 + **IFTTTCornerRadiusAnimation** animates the `layer.cornerRadius` property.
 + **IFTTTHideAnimation** animates the `hidden` property _(hides and shows views)_.
 + **IFTTTScaleAnimation** applies a scaling transform _(to scale view sizes)_.
@@ -160,6 +166,8 @@ Jazz Hands is flexible enough that it can accept timer input from many different
 An animator can only handle one animation per type per view. If you want multiple animations of the same type on a view, use keyframes.
 
 IFTTTFrameAnimation is not compatible with AutoLayout or any of the constraint animations.
+
+Looking for libraries to build awesome keyframe animations like JazzHands on Android? Check out [`SparkleMotion`](https://github.com/IFTTT/SparkleMotion).
 
 ## Contributors
 

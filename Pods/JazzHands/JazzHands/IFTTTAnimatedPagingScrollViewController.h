@@ -15,10 +15,10 @@
 @property (nonatomic, strong) IFTTTAnimator *animator;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, assign) CGFloat pageOffset;
 
 - (NSUInteger)numberOfPages;
 - (CGFloat)pageWidth;
-- (CGFloat)pageOffset;
 
 - (void)animateCurrentFrame;
 - (CGFloat)centerXMultiplierForPage:(CGFloat)page;
@@ -30,7 +30,12 @@
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages;
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times;
 - (void)keepView:(UIView *)view onPage:(CGFloat)page withAttribute:(IFTTTHorizontalPositionAttribute)attribute;
+- (void)keepView:(UIView *)view onPage:(CGFloat)page withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset;
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages withAttribute:(IFTTTHorizontalPositionAttribute)attribute;
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withAttribute:(IFTTTHorizontalPositionAttribute)attribute;
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset;
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset;
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages withAttribute:(IFTTTHorizontalPositionAttribute)attribute offsets:(NSArray *)offsets;
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withOffsets:(NSArray *)offsets withAttribute:(IFTTTHorizontalPositionAttribute)attribute;
 
 @end

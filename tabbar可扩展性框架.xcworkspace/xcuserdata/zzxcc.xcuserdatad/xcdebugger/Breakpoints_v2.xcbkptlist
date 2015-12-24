@@ -28,7 +28,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/Base(&#x57fa;&#x7c7b;)/BaseVC(&#x57fa;&#x7c7b;)/UIViewController+AOP.m"
@@ -39,22 +39,6 @@
             endingLineNumber = "22"
             landmarkName = "-swizzled_viewDidAppear:"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tabbar&#x53ef;&#x6269;&#x5c55;&#x6027;&#x6846;&#x67b6;/Base(&#x57fa;&#x7c7b;)/BaseVC(&#x57fa;&#x7c7b;)/UIViewController+AOP.m"
-            timestampString = "463632571.740023"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "swizzleMethod()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

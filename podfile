@@ -8,8 +8,10 @@ pod 'JazzHands', '~> 2.0.3'
 pod 'NYXImagesKit', '~> 2.3'
 pod 'SMPageControl', '~> 1.2'
 pod 'LTNavigationBar', '~> 2.1.0'
+pod 'pop', '~> 1.0.8'
 
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"
+
 
 

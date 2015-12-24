@@ -48,6 +48,8 @@
     _animator = [IFTTTAnimator new];
     _scrollView = [UIScrollView new];
     _contentView = [UIView new];
+    
+    [self updatePageOffset];
 }
 
 - (NSUInteger)numberOfPages
@@ -89,6 +91,7 @@
         animation.pageWidth = self.pageWidth;
     }
     
+    [self setPageOffset:self.pageOffset];
     [self animateCurrentFrame];
 }
 
@@ -145,10 +148,35 @@
     }];
 }
 
+#pragma mark - Page Offset
+
+- (void)setPageOffset:(CGFloat)pageOffset
+{
+    if (pageOffset < 0.f || pageOffset > (CGFloat) ([self numberOfPages] - 1)) {
+        return;
+    }
+    
+    _pageOffset = pageOffset;
+    self.scrollView.contentOffset = CGPointMake(self.pageWidth * pageOffset, 0.f);
+    [self animateCurrentFrame];
+}
+
+- (void)updatePageOffset
+{
+    if (self.pageWidth > 0.f) {
+        CGFloat currentOffset = self.scrollView.contentOffset.x;
+        currentOffset = currentOffset / self.pageWidth;
+        _pageOffset = currentOffset;
+    } else {
+        _pageOffset = 0.f;
+    }
+}
+
 #pragma mark - Scroll View
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    [self updatePageOffset];
     [self animateCurrentFrame];
 }
 
@@ -162,15 +190,6 @@
     return CGRectGetWidth(self.scrollView.frame);
 }
 
-- (CGFloat)pageOffset
-{
-    CGFloat currentOffset = self.scrollView.contentOffset.x;
-    if (self.pageWidth > 0.f) {
-        currentOffset = currentOffset / self.pageWidth;
-    }
-    return currentOffset;
-}
-
 #pragma mark - Keep View On Page Animations
 
 - (void)keepView:(UIView *)view onPage:(CGFloat)page
@@ -180,6 +199,11 @@
 
 - (void)keepView:(UIView *)view onPage:(CGFloat)page withAttribute:(IFTTTHorizontalPositionAttribute)attribute
 {
+    [self keepView:view onPage:page withAttribute:attribute offset:0.f];
+}
+
+- (void)keepView:(UIView *)view onPage:(CGFloat)page withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset
+{
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:view
                                                                  attribute:[self layoutAttributeFromPositionAttribute:attribute]
@@ -187,7 +211,7 @@
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeCenterX
                                                                 multiplier:[self multiplierForPage:page withAttribute:attribute]
-                                                                  constant:0.f]];
+                                                                  constant:offset]];
 }
 
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages
@@ -207,7 +231,51 @@
 
 - (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withAttribute:(IFTTTHorizontalPositionAttribute)attribute
 {
+    [self keepView:view onPages:pages atTimes:times withAttribute:attribute offset:0.f];
+}
+
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset
+{
+    [self keepView:view onPages:pages atTimes:pages withAttribute:attribute offset:offset];
+}
+
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withAttribute:(IFTTTHorizontalPositionAttribute)attribute offset:(CGFloat)offset
+{
     NSAssert((pages.count == times.count), @"Make sure you set a time for each position.");
+    
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSLayoutConstraint *xPositionConstraint = [NSLayoutConstraint constraintWithItem:view
+                                                                           attribute:[self layoutAttributeFromPositionAttribute:attribute]
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:self.contentView
+                                                                           attribute:NSLayoutAttributeLeft
+                                                                          multiplier:1.f
+                                                                            constant:offset];
+    [self.contentView addConstraint:xPositionConstraint];
+    // TODO: set constraint type for animation initializer
+    IFTTTScrollViewPageConstraintAnimation *xPositionAnimation = [IFTTTScrollViewPageConstraintAnimation animationWithSuperview:self.contentView
+                                                                                                                     constraint:xPositionConstraint
+                                                                                                                      pageWidth:self.pageWidth
+                                                                                                                      attribute:attribute];
+    
+    for (NSUInteger i = 0; i < pages.count; i++) {
+        [xPositionAnimation addKeyframeForTime:(CGFloat)[(NSNumber *)times[i] floatValue]
+                                          page:(CGFloat)[(NSNumber *)pages[i] floatValue]];
+    }
+    
+    [self.animator addAnimation:xPositionAnimation];
+    [self.scrollViewPageConstraintAnimations addObject:xPositionAnimation];
+}
+
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages withAttribute:(IFTTTHorizontalPositionAttribute)attribute offsets:(NSArray *)offsets
+{
+    [self keepView:view onPages:pages atTimes:pages withOffsets:offsets withAttribute:attribute];
+}
+
+- (void)keepView:(UIView *)view onPages:(NSArray *)pages atTimes:(NSArray *)times withOffsets:(NSArray *)offsets withAttribute:(IFTTTHorizontalPositionAttribute)attribute
+{
+    NSAssert((pages.count == times.count) && (pages.count == offsets.count), @"Make sure you set a time and offset for each position.");
     
     view.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -227,7 +295,8 @@
     
     for (NSUInteger i = 0; i < pages.count; i++) {
         [xPositionAnimation addKeyframeForTime:(CGFloat)[(NSNumber *)times[i] floatValue]
-                                          page:(CGFloat)[(NSNumber *)pages[i] floatValue]];
+                                          page:(CGFloat)[(NSNumber *)pages[i] floatValue]
+                                      constant:(CGFloat)[(NSNumber *)offsets[i] floatValue]];
     }
     
     [self.animator addAnimation:xPositionAnimation];
