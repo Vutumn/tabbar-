@@ -33,7 +33,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.tapView = [[HTestView alloc]initWithFrame:self.view.bounds];
-    self.tapView.delegate = self;
     self.tapView.backgroundColor = [UIColor orangeColor];
     
     [self.view addSubview:self.tapView];

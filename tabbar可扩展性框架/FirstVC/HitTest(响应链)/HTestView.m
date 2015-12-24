@@ -19,6 +19,7 @@
 
 #import "HTestView.h"
 #import "HTestViewB.h"
+#import "UIView+Common.h"
 
 @interface HTestView()
 @property (nonatomic, strong) UIButton *buttonA;
@@ -67,19 +68,14 @@
         _viewB = [[HTestViewB alloc]init];
         _viewB.backgroundColor = [UIColor yellowColor];
         [self addSubview:_viewB];
-        _viewB.delegate = self;
+        //!!!!!!!
+        _viewB.delegate = (id)[self findViewController];
         [_viewB makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(self.center);
             make.width.height.equalTo(@100);
         }];
     }
     return _viewB;
-}
-
-- (void)HTestViewBMethod {
-    if ([self.delegate respondsToSelector:@selector(HTestViewBMethod)]) {
-        [self.delegate HTestViewBMethod];
-    }
 }
 
 
